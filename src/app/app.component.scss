@@ -1,0 +1,12 @@
+// $icon-font-path: '~bootstrap-sass/assets/fonts/bootstrap/';
+
+// @import "node_modules/bootstrap-sass/assets/stylesheets/_bootstrap.scss"; 
+
+html, body{
+  height: 100%;
+  font-family: Arial, Helvetica, sans-serif
+}
+
+a.active {
+  background-color: gray;
+}

@@ -20,6 +20,14 @@
       "args": ["run", "test"]
     },
     {
+      "taskName": "build:prod",
+      "args": ["run", "build:prod"]
+    },
+    {
+      "taskName": "server:prod",
+      "args": ["run", "server:prod"]
+    },
+    {
       "taskName": "server",
       "isBuildCommand": true,
       "args": ["run", "server"]

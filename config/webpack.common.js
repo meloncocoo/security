@@ -148,6 +148,10 @@ module.exports = function (options) {
           use: ['to-string-loader', 'css-loader', 'sass-loader'],
           exclude: [helpers.root('src', 'styles')]
         },
+        { 
+          test: /\.(woff2?|ttf|eot|svg)$/, 
+          loader: 'url-loader?limit=10000' 
+        },
 
         /* Raw loader support for *.html
          * Returns file content as string

@@ -11,7 +11,7 @@
 ```bash
 # clone our repo
 # --depth 1 removes all but one .git commit history
-git clone --depth 1 https://github.com/angularclass/angular2-webpack-starter.git
+git clone https://github.com/meloncocoo/security
 
 # change directory to our repo
 cd angular2-webpack-starter
@@ -32,9 +32,11 @@ go to [http://0.0.0.0:3000](http://0.0.0.0:3000) or [http://localhost:3000](http
 
 # Table of Contents
 * [File Structure](#file-structure)
+* [Frequently asked questions](#frequently-asked-questions)
+* [Appendix](#appendix)
 
 ## File Structure
-We use the component approach in our starter. This is the new standard for developing Angular apps and a great way to ensure maintainable code by encapsulation of our behavior logic. A component is basically a self contained app usually in a single file or a folder with each concern as a file: style, template, specs, e2e, and component class. Here's how it looks:
+Reference from: [Angular2 Webpack Starter](https://github.com/AngularClass/angular2-webpack-starter)
 ```
 angular2-webpack-starter/
  ├──config/                        * our configuration
@@ -73,3 +75,10 @@ angular2-webpack-starter/
  └──webpack.config.js              * webpack main configuration file
 
 ```
+
+# Frequently asked questions
+* How to use Bootstrap 3 and Sass and ng2 bootstrap?
+  * See also: [wiki](https://github.com/AngularClass/angular2-webpack-starter/wiki/How-to-use-Bootstrap-3-and-Sass-and-ng2-bootstrap) of AngularClass.
+  * If Error "...node_modules\url\url.js' is not a loader (must have normal or pitch function)":
+    * loader: `'url?limit=10000'` => loader: `'url-loader?limit=10000'` in `webpack.common.js`
+## Appendix
