@@ -1,12 +1,17 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
   // moduleId: module.id,
   selector: 'header',
   templateUrl: 'header.component.html'
 })
-export class HeaderComponent implements OnInit {
-  constructor() { }
+export class HeaderComponent /*implements OnInit*/ {
+  @Input() public showSearchBox: boolean = false;
+  @Input() public hideMenu: boolean = false;
 
-  ngOnInit() { }
+  public isCollapsed: boolean = false;
+
+  // constructor() {}
+
+  // ngOnInit() { }
 }

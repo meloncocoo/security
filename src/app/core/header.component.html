@@ -1,15 +1,15 @@
 <div class="navbar navbar-static-top navbar-default" role="banner">
   <div class="container">
     <div class="navbar-header">
-      <button class="navbar-toggle collapsed" type="button" data-toggle="collapse" data-target=".bs-navbar-collapse">
+      <button class="navbar-toggle collapsed" type="button" (click)="isCollapsed = !isCollapsed">
         <span class="sr-only">Toggle navigation</span>
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a href="javascript:;" class="navbar-brand">SECURITY</a>
+      <a routerLink="/home" class="navbar-brand">SECURITY</a>
     </div>
-    <nav class="collapse navbar-collapse bs-navbar-collapse" role="navigation">
+    <nav class="collapse navbar-collapse bs-navbar-collapse" [collapse]="!isCollapsed">
       <ul class="nav navbar-nav">
         <li class="dropdown" dropdown>
           <a href="javascript:;" class="dropdown-toggle" dropdownToggle>Language <span class="caret"></span></a>
@@ -18,16 +18,35 @@
             <li><a href="javascript:;">English</a></li>
           </ul>
         </li>
-        <li>
+        <li *ngIf="!hideMenu">
           <a href="javascript:;">API</a>
         </li>
-        <li>
+        <li *ngIf="!hideMenu">
           <a href="javascript:;">关于</a>
         </li>
       </ul>
+      <div class="navbar-left search-box">
+        <form *ngIf="showSearchBox" class="navbar-form" role="search">
+          <div class="input-group">
+            <input type="text" class="form-control" placeholder="IP、域名、文件HASH(MD5/SHA1/SHA256)">
+            <div class="input-group-btn">
+              <span class="btn btn-default"><i class="fa fa-upload"></i></span>
+              <span class="btn btn-default btn-info">分析</span>
+            </div>
+          </div>
+        </form>
+      </div>
       <ul class="nav navbar-nav navbar-right">
+        <li>
+          <a href="javascript:;" class="btn btn-link navbar-btn">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </a>
+        </li>
         <li><a href="javascript:;"><i class="fa fa-user-circle" aria-hidden="true"></i> 登录</a></li>
-        <li><button type="button" class="btn btn-warning navbar-btn">Sign in</button></li>
+        <li><button type="button" class="btn btn-warning navbar-btn">注册</button></li>
       </ul>
     </nav>
   </div>

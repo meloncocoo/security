@@ -16,6 +16,7 @@ import {
 } from '@angular/router';
 
 import { CoreModule } from './core/core.module';
+import { DomainModule } from './domain/domain.module';
 
 /*
  * Platform and Environment providers/directives/pipes
@@ -27,12 +28,6 @@ import { AppComponent } from './app.component';
 import { APP_RESOLVER_PROVIDERS } from './app.resolver';
 import { AppState, InternalStateType } from './app.service';
 import { HomeComponent } from './home';
-
-import {
-  AlertModule,
-  DatepickerModule,
-  DropdownModule
-} from 'ng2-bootstrap';
 
 import '../styles/styles.scss';
 import '../styles/headings.css';
@@ -60,13 +55,11 @@ type StoreType = {
   ],
   imports: [ // import Angular's modules
     CoreModule,
+    DomainModule,
     // BrowserModule,
     // FormsModule,
     // HttpModule,
-    RouterModule.forRoot(ROUTES, { useHash: true, preloadingStrategy: PreloadAllModules }),
-    AlertModule.forRoot(),
-    DatepickerModule.forRoot(),
-    DropdownModule.forRoot()
+    RouterModule.forRoot(ROUTES, { useHash: true, preloadingStrategy: PreloadAllModules })
   ],
   providers: [ // expose our Services and Providers into Angular's dependency injection
     ENV_PROVIDERS,

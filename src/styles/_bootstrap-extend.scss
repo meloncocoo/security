@@ -54,3 +54,23 @@
 // Utility classes
 @import "~bootstrap-sass/assets/stylesheets/bootstrap/utilities";
 @import "~bootstrap-sass/assets/stylesheets/bootstrap/responsive-utilities";
+
+.navbar-default {
+  background-color: #fff;
+  > .container {
+    width: 100%;
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+}
+
+.dropdown-menu {
+  padding: 0px;
+  > li > a {
+    padding: 8px 20px;
+  }
+}
+
+.form-control {
+  @include box-shadow(none);
+}

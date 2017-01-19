@@ -2,6 +2,7 @@ import {
   Component,
   OnInit
 } from '@angular/core';
+import { Router } from '@angular/router';
 
 import { AppState } from '../app.service';
 
@@ -20,7 +21,8 @@ export class HomeComponent implements OnInit {
   public localState = { value: '' };
   // TypeScript public modifiers
   constructor(
-    public appState: AppState
+    public appState: AppState,
+    private router: Router
   ) {}
 
   public ngOnInit() {
@@ -32,5 +34,9 @@ export class HomeComponent implements OnInit {
     console.log('submitState', value);
     this.appState.set('value', value);
     this.localState.value = '';
+  }
+
+  public doSearch() {
+    this.router.navigate(['./domain']);
   }
 }
