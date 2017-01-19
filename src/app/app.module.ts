@@ -28,7 +28,11 @@ import { APP_RESOLVER_PROVIDERS } from './app.resolver';
 import { AppState, InternalStateType } from './app.service';
 import { HomeComponent } from './home';
 
-import { AlertModule, DatepickerModule } from 'ng2-bootstrap';
+import {
+  AlertModule,
+  DatepickerModule,
+  DropdownModule
+} from 'ng2-bootstrap';
 
 import '../styles/styles.scss';
 import '../styles/headings.css';
@@ -61,7 +65,8 @@ type StoreType = {
     // HttpModule,
     RouterModule.forRoot(ROUTES, { useHash: true, preloadingStrategy: PreloadAllModules }),
     AlertModule.forRoot(),
-    DatepickerModule.forRoot()
+    DatepickerModule.forRoot(),
+    DropdownModule.forRoot()
   ],
   providers: [ // expose our Services and Providers into Angular's dependency injection
     ENV_PROVIDERS,

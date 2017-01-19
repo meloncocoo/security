@@ -3,6 +3,10 @@ import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 import { NgModule } from '@angular/core';
 
+import {
+  DropdownModule
+} from 'ng2-bootstrap';
+
 import { HeaderComponent } from './header.component';
 
 let COMPONENTS = [
@@ -13,7 +17,8 @@ let COMPONENTS = [
   imports: [
     BrowserModule,
     FormsModule,
-    HttpModule
+    HttpModule,
+    DropdownModule.forRoot()
   ],
   exports: COMPONENTS,
   declarations: COMPONENTS

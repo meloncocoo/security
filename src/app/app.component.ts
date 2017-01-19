@@ -15,9 +15,6 @@ import { AppState } from './app.service';
 @Component({
   selector: 'app',
   encapsulation: ViewEncapsulation.None,
-  styleUrls: [
-    './app.component.scss'
-  ],
   template: `
     <header [class]="'test'"></header>
     <main>

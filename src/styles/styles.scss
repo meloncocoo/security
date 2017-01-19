@@ -3,3 +3,36 @@
 @import 'variables';
 @import 'bootstrap-extend';
 @import 'font-awesome-extend';
+
+@import '../assets/css/melon-ui';
+
+.navbar-brand {
+  color: $brand-info;
+}
+
+.home {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-40%);
+      -webkit-transform: translateX(-50%) translateY(-40%);
+}
+.home .title {
+  margin: 0 auto 50px auto;
+  color: $brand-info;
+  font-size: 42px;
+}
+.home .search {
+  margin: 0 auto;
+  width: 60%;
+}
+.home .search .btn-info {
+  padding-left: 30px;
+  padding-right: 30px;
+}
+.home .remark {
+  padding: 5px;
+}
+.home .source-ip {
+  margin-top: 50px;
+}
