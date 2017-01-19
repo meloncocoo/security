@@ -19,7 +19,7 @@ import { AppState } from './app.service';
     './app.component.scss'
   ],
   template: `
-    <header></header>
+    <header [class]="'test'"></header>
     <main>
       <router-outlet></router-outlet>
     </main>
