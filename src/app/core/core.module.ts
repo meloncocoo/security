@@ -14,9 +14,11 @@ import {
 } from 'ng2-bootstrap';
 
 import { HeaderComponent } from './header.component';
+import { FooterComponent } from './footer.component';
 
 let COMPONENTS = [
-  HeaderComponent
+  HeaderComponent,
+  FooterComponent
 ];
 
 @NgModule({
