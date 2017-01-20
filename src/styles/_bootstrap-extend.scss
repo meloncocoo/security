@@ -74,3 +74,13 @@
 .form-control {
   @include box-shadow(none);
 }
+
+.tab-content {
+  margin-bottom: $line-height-computed;
+  background-color: $panel-bg;
+  border: 1px solid $panel-default-border;
+  border-top-width: 0px;
+  border-radius: $panel-border-radius;
+  padding: 20px;
+  @include box-shadow(0 1px 1px rgba(0,0,0,.05));  
+}

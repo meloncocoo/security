@@ -8,13 +8,15 @@ import { SharedModule } from '../shared/shared.module';
 
 import {
   DropdownModule,
-  CollapseModule
+  CollapseModule,
+  TabsModule,
+  TooltipModule
 } from 'ng2-bootstrap';
 
 import { HeaderComponent } from './header.component';
 
 let COMPONENTS = [
-  HeaderComponent,
+  HeaderComponent
 ];
 
 @NgModule({
@@ -25,7 +27,9 @@ let COMPONENTS = [
     RouterModule,
     SharedModule,
     DropdownModule.forRoot(),
-    CollapseModule.forRoot()
+    CollapseModule.forRoot(),
+    TabsModule.forRoot(),
+    TooltipModule.forRoot()
   ],
   exports: COMPONENTS,
   declarations: COMPONENTS

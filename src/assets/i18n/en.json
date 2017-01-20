@@ -1,9 +1,12 @@
 {
-  "HELLO": "hello {{value}}",
+  "messages": {
+    "no-data": "No data"
+  },
   "header": {
     "title": "SECURITY",
     "about": "About",
-    "language": "语言"
+    "language": "语言",
+    "upload-tooltip": "Upload file"
   },
   "search": {
     "example": "Example: manage-163-account.com 82.165.37.26 DarkHotel Digital Certificate File",
@@ -25,9 +28,23 @@
     "DNS-server": "Name Server",
     "alexa-rank": "Alexa Rank",
     "user-marks": "User Marks",
+
     "c2server": "c2server({{value}})",
     "malicious-site": "malicious-site({{value}})",
     "normal-site": "normal-site({{value}})",
-    "phishing": "phishing({{value}})"
+    "phishing": "phishing({{value}})",
+
+    "intelligence": "Intelligence",
+    "IP": "IP",
+    "sub-domains": "Sub Domains",
+    "whois": "Whois",
+    "certificate": "Certificate",
+    "visualization": "Visualization",
+    "community": "Community",
+
+    "threat-intelligence-detection": "Threat intelligence detection",
+    "relate-event": "Relate Event",
+    "suspect-urls-on-this-address": "Suspect urls on this address",
+    "samples-in-communication": "Samples in communication"
   }
 }

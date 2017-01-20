@@ -1,9 +1,13 @@
 {
-  "HELLO": "您好: {{value}}",
+  "messages": {
+    "no-data": "无匹配数据",
+    "no-sample-match": "No Sample match"
+  },
   "header": {
     "title": "安全分析",
     "about": "关于",
-    "language": "Language"
+    "language": "Language",
+    "upload-tooltip": "上传文件"
   },
   "search": {
     "example": "样例： manage-163-account.com 82.165.37.26 DarkHotel 数字签名 文件",
@@ -27,6 +31,20 @@
     "c2server": "远控服务器({{value}})",
     "malicious-site": "恶意网站({{value}})",
     "normal-site": "正常网站({{value}})",
-    "phishing": "钓鱼网站({{value}})"
+    "phishing": "钓鱼网站({{value}})",
+
+    "intelligence": "威胁情报",
+    "IP": "IP分析",
+    "sub-domains": "子域名",
+    "whois": "Whois",
+    "certificate": "数字证书",
+    "visualization": "可视分析",
+    "community": "情报社区",
+
+    "threat-intelligence-detection": "威胁情报检测",
+    "relate-event": "相关事件",
+    "suspect-urls-on-this-address": "该地址上的可疑URL",
+    "samples-in-communication": "与该地址通讯的样本"
+
   }
 }

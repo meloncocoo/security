@@ -32,9 +32,63 @@
           </table>
         </div>
         <div class="col-md-4">
-          
+
         </div>
       </div>
     </div>
   </div>
+
+  <tabset [justified]="true">
+    <tab>
+      <template tabHeading>{{'domain.intelligence' | translate}}</template>
+      <div class="panel panel-default">
+        <div class="panel-heading"><h2 class="panel-title">{{'domain.threat-intelligence-detection' | translate}}</h2></div>
+        <div class="panel-body">
+          <p class="no-data">{{'messages.no-data' | translate}}</p>
+        </div>
+      </div>
+      <div class="panel panel-default">
+        <div class="panel-heading"><h2 class="panel-title">{{'domain.relate-event' | translate}}</h2></div>
+        <div class="panel-body">
+          <p class="no-data">{{'messages.no-data' | translate}}</p>
+        </div>
+      </div>
+      <div class="panel panel-default">
+        <div class="panel-heading"><h2 class="panel-title">{{'domain.suspect-urls-on-this-address' | translate}}</h2></div>
+        <div class="panel-body">
+          <p class="no-data">{{'messages.no-data' | translate}}</p>
+        </div>
+      </div>
+      <div class="panel panel-default">
+        <div class="panel-heading"><h2 class="panel-title">{{'domain.samples-in-communication' | translate}}</h2></div>
+        <div class="panel-body">
+          <p class="no-data">{{'messages.no-sample-match' | translate}}</p>
+        </div>
+      </div>
+    </tab>
+    <tab>
+      <template tabHeading>{{'domain.IP' | translate}}</template>
+      IP
+    </tab>
+    <tab>
+      <template tabHeading>{{'domain.sub-domains' | translate}}</template>
+      Sub Domains
+    </tab>
+    <tab>
+      <template tabHeading>{{'domain.whois' | translate}}</template>
+      Whois
+    </tab>
+    <tab>
+      <template tabHeading>{{'domain.certificate' | translate}}</template>
+      Certificate
+    </tab>
+    <tab>
+      <template tabHeading>{{'domain.visualization' | translate}}</template>
+      Visualization
+    </tab>
+    <tab>
+      <template tabHeading>{{'domain.community' | translate}}</template>
+      Community
+    </tab>
+  </tabset>
 </div>
