@@ -14,8 +14,8 @@
         <li class="dropdown" dropdown>
           <a href="javascript:;" class="dropdown-toggle" dropdownToggle>Language <span class="caret"></span></a>
           <ul dropdownMenu class="dropdown-menu" role="menu" aria-labelledby="single-button">
-            <li><a href="javascript:;">中文</a></li>
-            <li><a href="javascript:;">English</a></li>
+            <li><a href="javascript:;" (click)="setLanguage('zh')">中文</a></li>
+            <li><a href="javascript:;" (click)="setLanguage('en')">English</a></li>
           </ul>
         </li>
         <li *ngIf="!hideMenu">

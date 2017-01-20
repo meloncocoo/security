@@ -54,3 +54,32 @@
 .home .source-ip {
   margin-top: 50px;
 }
+
+.app-domain {
+  background-color: #f3f4f5;
+  font-size: 14px;
+  .panel {
+    > .panel-heading {
+      font-size: 20px;
+    }
+    > .panel-body {
+      .table {
+        border: none;
+        > tbody {
+          > tr {
+            > th {
+              font-weight: normal;
+            }
+            > td, th {
+              border: none;
+              > .label {
+                padding: 4px;
+                border-radius: 0px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

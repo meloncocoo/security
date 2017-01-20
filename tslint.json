@@ -6,6 +6,7 @@
     "node_modules/codelyzer"
   ],
   "rules": {
+    "member-access": false,
     // Custom
     "trailing-comma": [false, {"multiline": "always", "singleline": "never"}],
     "interface-name": [false, "always-prefix"],
@@ -19,7 +20,7 @@
     "no-access-missing-member": true,
     "no-attribute-parameter-decorator": true,
     "no-forward-ref": true,
-    "no-input-rename": true,
+    "no-input-rename": false,
     "no-output-rename": true,
     "pipe-naming": [true, "camelCase", "my"],
     "templates-use-public": true,

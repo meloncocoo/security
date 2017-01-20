@@ -1,4 +1,5 @@
 import { Component, OnInit, Input } from '@angular/core';
+import { TranslateService } from 'ng2-translate';
 
 @Component({
   // moduleId: module.id,
@@ -11,7 +12,14 @@ export class HeaderComponent /*implements OnInit*/ {
 
   public isCollapsed: boolean = false;
 
-  // constructor() {}
+  constructor(private translate: TranslateService) {
+    this.translate.setDefaultLang('en');
+    this.translate.use('en');
+  }
 
   // ngOnInit() { }
+
+  setLanguage(lang: string) {
+    this.translate.use(lang);
+  }
 }

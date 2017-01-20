@@ -1,1 +1,40 @@
 <header [showSearchBox]="true" [hideMenu]="true"></header>
+<div class="container" bodyStyle [body-class]="['app-domain']">
+  <div class="panel panel-default">
+    <div class="panel-heading">www.ncsi.com.cn <small>分析报告</small></div>
+    <div class="panel-body">
+      <div class="row">
+        <div class="col-md-8">
+          <table class="table table-condensed table-borderless">
+            <tbody>
+              <tr>
+                <th>域名服务商</th>
+                <td>北京中科三方网络技术有限公司*</td>
+              </tr>
+              <tr>
+                <th>域名服务器</th>
+                <td>pridns1.ncs.com.sg; dns.ncsi.com.cn*</td>
+              </tr>
+              <tr>
+                <th>Alexa排名</th>
+                <td>N/A</td>
+              </tr>
+              <tr>
+                <th>用户标记</th>
+                <td>
+                  <span class="label label-default">远控服务器(0)</span>
+                  <span class="label label-default">恶意网站(0)</span>
+                  <span class="label label-default">正常网站(0)</span>
+                  <span class="label label-default">钓鱼网站(0)</span>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="col-md-4">
+          <div [innerHTML]="'HELLO' | translate"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
