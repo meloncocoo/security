@@ -7,12 +7,12 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a routerLink="/home" class="navbar-brand">SECURITY</a>
+      <a routerLink="/home" class="navbar-brand">{{'header.title' | translate}}</a>
     </div>
     <nav class="collapse navbar-collapse bs-navbar-collapse" [collapse]="!isCollapsed">
       <ul class="nav navbar-nav">
         <li class="dropdown" dropdown>
-          <a href="javascript:;" class="dropdown-toggle" dropdownToggle>Language <span class="caret"></span></a>
+          <a href="javascript:;" class="dropdown-toggle" dropdownToggle> {{'header.language' | translate}} <span class="caret"></span></a>
           <ul dropdownMenu class="dropdown-menu" role="menu" aria-labelledby="single-button">
             <li><a href="javascript:;" (click)="setLanguage('zh')">中文</a></li>
             <li><a href="javascript:;" (click)="setLanguage('en')">English</a></li>
@@ -22,7 +22,7 @@
           <a href="javascript:;">API</a>
         </li>
         <li *ngIf="!hideMenu">
-          <a href="javascript:;">关于</a>
+          <a href="javascript:;">{{'header.about' | translate}}</a>
         </li>
       </ul>
       <div class="navbar-left search-box">
@@ -31,7 +31,7 @@
             <input type="text" class="form-control" placeholder="IP、域名、文件HASH(MD5/SHA1/SHA256)">
             <div class="input-group-btn">
               <span class="btn btn-default"><i class="fa fa-upload"></i></span>
-              <span class="btn btn-default btn-info">分析</span>
+              <span class="btn btn-default btn-info">{{'buttons.analyse' | translate}}</span>
             </div>
           </div>
         </form>
@@ -45,8 +45,8 @@
             <span class="icon-bar"></span>
           </a>
         </li>
-        <li><a href="javascript:;"><i class="fa fa-user-circle" aria-hidden="true"></i> 登录</a></li>
-        <li><button type="button" class="btn btn-warning navbar-btn">注册</button></li>
+        <li><a href="javascript:;"><i class="fa fa-user-circle" aria-hidden="true"></i> {{'buttons.signin' | translate}}</a></li>
+        <li><button type="button" class="btn btn-success navbar-btn">{{'buttons.signup' | translate}}</button></li>
       </ul>
     </nav>
   </div>

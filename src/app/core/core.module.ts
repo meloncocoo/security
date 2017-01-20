@@ -1,8 +1,10 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule } from '@angular/forms';
-import { HttpModule } from '@angular/http';
+import { HttpModule, Http } from '@angular/http';
 import { RouterModule } from '@angular/router';
 import { NgModule } from '@angular/core';
+
+import { SharedModule } from '../shared/shared.module';
 
 import {
   DropdownModule,
@@ -12,7 +14,7 @@ import {
 import { HeaderComponent } from './header.component';
 
 let COMPONENTS = [
-  HeaderComponent
+  HeaderComponent,
 ];
 
 @NgModule({
@@ -21,6 +23,7 @@ let COMPONENTS = [
     FormsModule,
     HttpModule,
     RouterModule,
+    SharedModule,
     DropdownModule.forRoot(),
     CollapseModule.forRoot()
   ],

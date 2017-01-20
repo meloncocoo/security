@@ -10,16 +10,19 @@ export class HeaderComponent /*implements OnInit*/ {
   @Input() public showSearchBox: boolean = false;
   @Input() public hideMenu: boolean = false;
 
+  lang: string = 'en';
+
   public isCollapsed: boolean = false;
 
   constructor(private translate: TranslateService) {
     this.translate.setDefaultLang('en');
-    this.translate.use('en');
+    this.translate.use(this.lang);
   }
 
   // ngOnInit() { }
 
   setLanguage(lang: string) {
-    this.translate.use(lang);
+    this.lang = lang;
+    this.translate.use(this.lang);
   }
 }

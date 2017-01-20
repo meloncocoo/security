@@ -1,3 +1,32 @@
 {
-  "HELLO": "您好: {{value}}"
+  "HELLO": "您好: {{value}}",
+  "header": {
+    "title": "安全分析",
+    "about": "关于",
+    "language": "Language"
+  },
+  "search": {
+    "example": "样例： manage-163-account.com 82.165.37.26 DarkHotel 数字签名 文件",
+    "input": "IP、域名、文件HASH(MD5/SHA1/SHA256)"
+  },
+  "buttons": {
+    "analyse": "分析",
+    "signin": "登录",
+    "signup": "注册"
+  },
+  "home": {
+    "title": "威胁分析平台",
+    "visitor": "访问者IP："
+  },
+  "domain": {
+    "title": "分析报告",
+    "DNS": "域名服务商",
+    "DNS-server": "域名服务器",
+    "alexa-rank": "Alexa排名",
+    "user-marks": "用户标记",
+    "c2server": "远控服务器({{value}})",
+    "malicious-site": "恶意网站({{value}})",
+    "normal-site": "正常网站({{value}})",
+    "phishing": "钓鱼网站({{value}})"
+  }
 }

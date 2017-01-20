@@ -1,3 +1,33 @@
 {
-  "HELLO": "hello {{value}}"
+  "HELLO": "hello {{value}}",
+  "header": {
+    "title": "SECURITY",
+    "about": "About",
+    "language": "语言"
+  },
+  "search": {
+    "example": "Example: manage-163-account.com 82.165.37.26 DarkHotel Digital Certificate File",
+    "input": "IP,domain,hash(MD5/SHA1/SHA256)"
+  },
+  "buttons": {
+    "analyse": "Analyse",
+    "signin": "Sign in",
+    "signup": "Sign up"
+  },
+  "home": {
+    "title": "THREAT ANALYSIS PLATFORM",
+    "placeholder": "IP,domain,hash(MD5/SHA1/SHA256)",
+    "visitor": "Current IP: "
+  },
+  "domain": {
+    "title": "Analysis Report",
+    "DNS": "Registrar",
+    "DNS-server": "Name Server",
+    "alexa-rank": "Alexa Rank",
+    "user-marks": "User Marks",
+    "c2server": "c2server({{value}})",
+    "malicious-site": "malicious-site({{value}})",
+    "normal-site": "normal-site({{value}})",
+    "phishing": "phishing({{value}})"
+  }
 }

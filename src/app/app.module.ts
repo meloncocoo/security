@@ -16,6 +16,7 @@ import {
 } from '@angular/router';
 
 import { CoreModule } from './core/core.module';
+import { SharedModule } from './shared/shared.module';
 import { DomainModule } from './domain/domain.module';
 
 /*
@@ -55,6 +56,7 @@ type StoreType = {
   ],
   imports: [ // import Angular's modules
     CoreModule,
+    SharedModule,
     DomainModule,
     // BrowserModule,
     // FormsModule,

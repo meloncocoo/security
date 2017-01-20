@@ -1,38 +1,38 @@
 <header [showSearchBox]="true" [hideMenu]="true"></header>
 <div class="container" bodyStyle [body-class]="['app-domain']">
   <div class="panel panel-default">
-    <div class="panel-heading">www.ncsi.com.cn <small>分析报告</small></div>
+    <div class="panel-heading">www.ncsi.com.cn <small>{{'domain.title' | translate}}</small></div>
     <div class="panel-body">
       <div class="row">
         <div class="col-md-8">
           <table class="table table-condensed table-borderless">
             <tbody>
               <tr>
-                <th>域名服务商</th>
+                <th>{{'domain.DNS' | translate}}</th>
                 <td>北京中科三方网络技术有限公司*</td>
               </tr>
               <tr>
-                <th>域名服务器</th>
+                <th>{{'domain.DNS-server' | translate}}</th>
                 <td>pridns1.ncs.com.sg; dns.ncsi.com.cn*</td>
               </tr>
               <tr>
-                <th>Alexa排名</th>
+                <th>{{'domain.alexa-rank' | translate}}</th>
                 <td>N/A</td>
               </tr>
               <tr>
-                <th>用户标记</th>
+                <th>{{'domain.user-marks' | translate}}</th>
                 <td>
-                  <span class="label label-default">远控服务器(0)</span>
-                  <span class="label label-default">恶意网站(0)</span>
-                  <span class="label label-default">正常网站(0)</span>
-                  <span class="label label-default">钓鱼网站(0)</span>
+                  <span class="label label-default">{{'domain.c2server' | translate:value}}</span>
+                  <span class="label label-default">{{'domain.malicious-site' | translate:value}}</span>
+                  <span class="label label-default">{{'domain.normal-site' | translate:value}}</span>
+                  <span class="label label-default">{{'domain.phishing' | translate:value}}</span>
                 </td>
               </tr>
             </tbody>
           </table>
         </div>
         <div class="col-md-4">
-          <div [innerHTML]="'HELLO' | translate"></div>
+          
         </div>
       </div>
     </div>

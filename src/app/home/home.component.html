@@ -1,17 +1,17 @@
 <header></header>
 <main>
   <div class="container home">
-    <h1 class="text-center title">威胁分析平台</h1>
+    <h1 class="text-center title">{{'home.title' | translate}}</h1>
     <div class="text-center search">
       <div class="input-group input-group-lg">
-        <input type="text" class="form-control" placeholder="IP、域名、文件HASH(MD5/SHA1/SHA256)">
+        <input type="text" class="form-control" [attr.placeholder]="'search.input' | translate">
         <div class="input-group-btn">
           <span class="btn btn-default"><i class="fa fa-upload"></i></span>
-          <span class="btn btn-default btn-info" (click)="doSearch()">分析</span>
+          <span class="btn btn-default btn-info" (click)="doSearch()">{{'buttons.analyse' | translate}}</span>
         </div>
       </div>
     </div>
-    <p class="text-center remark">样例： manage-163-account.com 82.165.37.26 DarkHotel 数字签名 文件</p>
-    <p class="text-center source-ip">访问者IP：<a href="javascript:;">58.247.19.61</a></p>
+    <p class="text-center remark">{{'search.example' | translate}}</p>
+    <p class="text-center source-ip">{{'home.visitor' | translate}}<a href="javascript:;">58.247.19.61</a></p>
   </div>
 </main>
