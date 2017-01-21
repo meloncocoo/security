@@ -75,6 +75,9 @@
   @include box-shadow(none);
 }
 
+.nav-tabs > li.nav-item.active {
+  border-top: 2px solid #f3565d;
+}
 .tab-content {
   margin-bottom: $line-height-computed;
   background-color: $panel-bg;
