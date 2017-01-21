@@ -27,6 +27,7 @@
     "DNS": "域名服务商",
     "DNS-server": "域名服务器",
     "alexa-rank": "Alexa排名",
+    "tags": "Tags",
     "user-marks": "用户标记",
     "c2server": "远控服务器({{value}})",
     "malicious-site": "恶意网站({{value}})",

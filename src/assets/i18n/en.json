@@ -27,6 +27,7 @@
     "DNS": "Registrar",
     "DNS-server": "Name Server",
     "alexa-rank": "Alexa Rank",
+    "tags": "Tags",
     "user-marks": "User Marks",
 
     "c2server": "c2server({{value}})",

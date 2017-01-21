@@ -82,3 +82,7 @@ angular2-webpack-starter/
   * If Error "...node_modules\url\url.js' is not a loader (must have normal or pitch function)":
     * loader: `'url?limit=10000'` => loader: `'url-loader?limit=10000'` in `webpack.common.js`
 ## Appendix
+* Reference: 
+  * [ThreatBook](https://x.threatbook.cn/)
+  * [安全联盟](jubao.anquan.org)
+  * [Singapore Exchange Ltd | SGX](www.sgx.com)

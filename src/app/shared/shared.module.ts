@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { HttpModule, Http } from '@angular/http';
 import { TranslateModule, TranslateLoader, TranslateStaticLoader } from 'ng2-translate';
 import { BodyStyleDirective } from './style.directive';
+import { GaugeDirective } from './gauge.directive';
 
 @NgModule({
   imports: [
@@ -13,9 +14,10 @@ import { BodyStyleDirective } from './style.directive';
   ],
   exports: [
     TranslateModule,
-    BodyStyleDirective
+    BodyStyleDirective,
+    GaugeDirective
   ],
-  declarations: [BodyStyleDirective],
+  declarations: [BodyStyleDirective, GaugeDirective],
   providers: [],
 })
 export class SharedModule { }
