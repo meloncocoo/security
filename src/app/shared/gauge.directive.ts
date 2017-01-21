@@ -8,11 +8,9 @@ export class GaugeDirective implements OnInit, OnDestroy {
   constructor(private renderer: Renderer, private el: ElementRef) { }
 
   ngOnInit() {
-    console.log(Gauge);
   }
 
   ngAfterViewInit() {
-    console.log(Gauge);
     var opts = {
       lines: 12, // The number of lines to draw
       angle: 0.02, // The span of the gauge arc
