@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { DomainService } from './domain.service';
 
 @Component({
   selector: 'domain',
@@ -7,7 +8,17 @@ import { Component, OnInit } from '@angular/core';
 export class DomainComponent implements OnInit {
   value = { value: 0 };
 
-  constructor() { }
+  constructor(private domainService: DomainService) { }
 
-  ngOnInit() { }
+  ngOnInit() {
+    this.getDomains();
+  }
+
+  getDomains() {
+    this.domainService.getDomainByName('www.ncsi.com.cn').then((domain) => {
+      console.log(domain);
+    }, (err) => {
+      console.error(err);
+    });
+  }
 }

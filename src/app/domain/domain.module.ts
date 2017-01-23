@@ -7,6 +7,9 @@ import {
 import { CoreModule } from '../core/core.module';
 import { SharedModule } from '../shared/shared.module';
 import { DomainRoutingModule } from './domain-routing.module';
+
+import { DomainService } from './domain.service';
+
 import { DomainComponent }   from './domain.component';
 
 @NgModule({
@@ -18,6 +21,6 @@ import { DomainComponent }   from './domain.component';
   ],
   exports: [],
   declarations: [DomainComponent],
-  providers: [],
+  providers: [DomainService],
 })
 export class DomainModule { }

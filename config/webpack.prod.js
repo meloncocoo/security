@@ -24,6 +24,7 @@ const V8LazyParseWebpackPlugin = require('v8-lazy-parse-webpack-plugin');
 const ENV = process.env.NODE_ENV = process.env.ENV = 'production';
 const HOST = process.env.HOST || 'localhost';
 const PORT = process.env.PORT || 8080;
+const REMOTE_PORT = process.env.PORT || 80;
 const METADATA = webpackMerge(commonConfig({env: ENV}).metadata, {
   host: HOST,
   port: PORT,
@@ -150,6 +151,7 @@ module.exports = function (env) {
       new DefinePlugin({
         'ENV': JSON.stringify(METADATA.ENV),
         'HMR': METADATA.HMR,
+        'API': JSON.stringify('http://' + HOST + ':' + REMOTE_PORT + '/api'),
         'process.env': {
           'ENV': JSON.stringify(METADATA.ENV),
           'NODE_ENV': JSON.stringify(METADATA.ENV),
