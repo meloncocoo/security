@@ -85,5 +85,13 @@
   border-top-width: 0px;
   border-radius: $panel-border-radius;
   padding: 20px;
-  @include box-shadow(0 1px 1px rgba(0,0,0,.05));  
+  @include box-shadow(0 1px 1px rgba(0,0,0,.05));
+  > .tab-pane {
+    > .panel {
+      border: none;
+      > .alert {
+        margin: 0px;
+      }
+    }
+  } 
 }

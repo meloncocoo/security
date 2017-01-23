@@ -1,12 +1,22 @@
 {
   "messages": {
-    "no-data": "No data"
+    "no-data": "No data",
+    "no-sample-match": "No Sample match"
   },
   "header": {
     "title": "SECURITY",
     "about": "About",
     "language": "语言",
     "upload-tooltip": "Upload file"
+  },
+  "footer": {
+    "guide": "Guide",
+    "api": "API",
+    "about": "About",
+    "terms-of-service": "Terms of Service",
+    "privacy-policy": "Privacy Policy",
+    "change-log-partner": "Change Log Partner",
+    "partner": "Partner"
   },
   "search": {
     "example": "Example: manage-163-account.com 82.165.37.26 DarkHotel Digital Certificate File",
@@ -36,8 +46,30 @@
     "phishing": "phishing({{value}})",
 
     "intelligence": "Intelligence",
-    "IP": "IP",
-    "sub-domains": "Sub Domains",
+    "IP": {
+      "title": "IP",
+      "address": "IP address",
+      "location": "Location",
+      "ASN": "ASN",
+
+      "history": "History",
+      "time": "Time",
+      "IP": "IP",
+      "region": "Region",
+      "province": "Province / State",
+      "carrier": "Carrier",
+
+      "domain-list": "Reverse IP",
+      "domain": "Domain"
+    },
+    "sub-domains":{
+      "title": "Sub Domains",
+      "sub-domains": "Sub Domains",
+      "current-dns-data": "Current DNS Data",
+      "type": "Type",
+      "data": "Data",
+      "login-tip": "Total 13, to view the all information, Login"
+    },
     "whois": "Whois",
     "certificate": "Certificate",
     "visualization": "Visualization",

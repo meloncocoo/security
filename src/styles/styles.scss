@@ -31,6 +31,10 @@
 .footer {
   background-color: #252a2f;
   padding: 60px 40px;
+  font-size: 12px;
+  .follow-us {
+    font-size: 18px;
+  }
 }
 
 .main-body {
@@ -89,6 +93,11 @@
           }
         }
       }
+    }
+  }
+  .span-list.panel {
+    .row span {
+      line-height: 28px;
     }
   }
 }

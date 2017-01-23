@@ -35,8 +35,9 @@
             </tbody>
           </table>
         </div>
-        <div class="col-md-4">
+        <div class="col-md-4 text-center">
           <canvas gauge [value]="20">gauge</canvas>
+          <h4><span class="label label-warning">查询热度</span></h4>
         </div>
       </div>
     </div>
@@ -71,12 +72,149 @@
       </div>
     </tab>
     <tab>
-      <template tabHeading>{{'domain.IP' | translate}}</template>
-      IP
+      <template tabHeading>{{'domain.IP.title' | translate}}</template>
+      <div class="panel panel-default">
+        <div class="panel-heading"><h2 class="panel-title">{{'domain.IP.address' | translate}}</h2></div>
+        <div class="panel-body">
+          <table class="table table-condensed table-borderless">
+            <tbody>
+              <tr>
+                <th>{{'domain.IP.address' | translate}}</th>
+                <td><a href="javascript:;">203.126.130.51</a> <a href="javascript:;">（共有 11 个域名指向此地址）</a></td>
+              </tr>
+              <tr>
+                <th>{{'domain.IP.location' | translate}}</th>
+                <td>新加坡,新加坡</td>
+              </tr>
+              <tr>
+                <th>{{'domain.IP.ASN' | translate}}</th>
+                <td>3758 （SINGNET SingNet, SG）</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+      <div class="panel panel-default">
+        <div class="panel-heading"><h2 class="panel-title">{{'domain.IP.history' | translate}}</h2></div>
+        <div class="panel-body">
+          <table class="table table-condensed table-borderless">
+            <thead>
+              <tr>
+                <th>{{'domain.IP.time' | translate}}</th>
+                <th>{{'domain.IP.IP' | translate}}</th>
+                <th>{{'domain.IP.region' | translate}}</th>
+                <th>{{'domain.IP.province' | translate}}</th>
+                <th>{{'domain.IP.carrier' | translate}}</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>2016-11-21</td>
+                <td>203.126.*.*</td>
+                <td>新加坡</td>
+                <td>新加坡</td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>2016-05-01</td>
+                <td>113.11.*.*</td>
+                <td>新加坡</td>
+                <td>新加坡</td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>2010-09-08</td>
+                <td>202.6.*.*</td>
+                <td>新加坡</td>
+                <td>新加坡</td>
+                <td></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+      <div class="panel panel-default span-list">
+        <div class="panel-heading"><h2 class="panel-title">{{'domain.IP.domain-list' | translate}}</h2></div>
+        <div class="panel-body">
+          <div class="row">
+            <div class="col-md-6">
+              <span>ncsi.com.cn</span>
+            </div>
+            <div class="col-md-6">
+              <span>www.ncsi.com.cn</span>
+            </div>
+            <div class="col-md-6">
+              <span>www.csalarm.cn</span>
+            </div>
+            <div class="col-md-6">
+              <span>www.consortio-usa.com</span>
+            </div>
+            <div class="col-md-6">
+              <span>www.ncs-group.com</span>
+            </div>
+            <div class="col-md-6">
+              <span>www.ncs-i.com</span>
+            </div>
+            <div class="col-md-6">
+              <span>surfnation.net</span>
+            </div>
+            <div class="col-md-6">
+              <span>www.surfnation.net</span>
+            </div>
+            <div class="col-md-6">
+              <span>ncs.com.sg</span>
+            </div>
+            <div class="col-md-6">
+              <span>www.ncs.com.sg</span>
+            </div>
+          </div>
+        </div>
+      </div>
     </tab>
     <tab>
-      <template tabHeading>{{'domain.sub-domains' | translate}}</template>
-      Sub Domains
+      <template tabHeading>{{'domain.sub-domains.title' | translate}}</template>
+      <div class="panel panel-default span-list">
+        <div class="panel-heading"><h2 class="panel-title">{{'domain.sub-domains.sub-domains' | translate}}</h2></div>
+        <div class="alert alert-warning">{{'domain.sub-domains.login-tip' | translate}}</div>
+        <div class="panel-body">
+          <div class="row">
+            <div class="col-md-6">
+              <span>p*.cd.ncsi.com.cn</span>
+            </div>
+            <div class="col-md-6">
+              <span>c*.ncsi.com.cn</span>
+            </div>
+            <div class="col-md-6">
+              <span>t*.ncsi.com.cn</span>
+            </div>
+            <div class="col-md-6">
+              <span>w*.ncsi.com.cn</span>
+            </div>
+            <div class="col-md-6">
+              <span>l*.ncsi.com.cn</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="panel panel-default">
+        <div class="panel-heading"><h2 class="panel-title">{{'domain.sub-domains.current-dns-data' | translate}}</h2></div>
+        <div class="panel-body">
+          <table class="table table-condensed table-borderless">
+            <thead>
+              <tr>
+                <th style="width: 120px;">{{'domain.sub-domains.type' | translate}}</th>
+                <th>{{'domain.sub-domains.data' | translate}}</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>A</td>
+                <td>203.126.130.51</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
     </tab>
     <tab>
       <template tabHeading>{{'domain.whois' | translate}}</template>
