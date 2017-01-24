@@ -45,6 +45,18 @@ export class DomainService {
       .then((entities) => entities.find((entity) => entity.domainId === id));
   }
 
+  getWhois(): any {
+    return this.http.get('/assets/api/whois.json')
+      .toPromise()
+      .then((res) => res.json())
+      .catch(this.handleError);
+  }
+
+  getWhoisByDomainId(id: number): any {
+    return this.getWhois()
+      .then((entities) => entities.find((entity) => entity.domainId === id));
+  }
+
   private handleError (error: Response | any) {
     // In a real world app, we might use a remote logging infrastructure
     let errMsg: string;

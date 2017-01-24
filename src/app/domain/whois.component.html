@@ -1,0 +1,51 @@
+<div *ngIf="entity && entity.information" class="panel panel-default">
+  <div class="panel-heading">
+    <h2 class="panel-title">Current registration information</h2>
+  </div>
+  <div class="panel-body">
+    <table class="table table-condensed table-borderless">
+      <tbody>
+        <tr>
+          <th style="width: 30%;">Registrant</th>
+          <td>{{entity.information.registrant}}</td>
+        </tr>
+        <tr>
+          <th style="width: 30%;">Registration</th>
+          <td>{{entity.information.registration}}</td>
+        </tr>
+        <tr>
+          <th style="width: 30%;">Email</th>
+          <td>{{entity.information.email}}</td>
+        </tr>
+        <tr>
+          <th style="width: 30%;">Address</th>
+          <td>{{entity.information.address}}</td>
+        </tr>
+        <tr>
+          <th style="width: 30%;">Phone</th>
+          <td>{{entity.information.phone}}</td>
+        </tr>
+        <tr>
+          <th style="width: 30%;">Creation Date</th>
+          <td>{{entity.information.creationDate}}</td>
+        </tr>
+        <tr>
+          <th style="width: 30%;">Expire Date</th>
+          <td>{{entity.information.expireDate}}</td>
+        </tr>
+        <tr>
+          <th style="width: 30%;">Updated Date</th>
+          <td>{{entity.information.updatedDate}}</td>
+        </tr>
+        <tr>
+          <th style="width: 30%;">Registrar</th>
+          <td>{{entity.information.registrar}}</td>
+        </tr>
+        <tr>
+          <th style="width: 30%;">Name Server</th>
+          <td>{{entity.information.nameServer}}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>

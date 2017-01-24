@@ -2,20 +2,20 @@ import { Component, OnInit } from '@angular/core';
 import { DomainService } from './domain.service';
 
 @Component({
-  selector: 'sub-domains',
-  templateUrl: 'sub-domains.component.html'
+  selector: 'whois',
+  templateUrl: 'whois.component.html'
 })
-export class SubDomainsComponent implements OnInit {
+export class WhoisComponent implements OnInit {
   private entity: any;
 
   constructor(private domainService: DomainService) { }
 
   ngOnInit() {
-    this.getIPs();
+    this.getWhois();
   }
 
-  getIPs() {
-    this.domainService.getSubDomainsByDomainId(2)
+  getWhois() {
+    this.domainService.getWhoisByDomainId(2)
       .then((entity) => this.entity = entity);
   }
 }

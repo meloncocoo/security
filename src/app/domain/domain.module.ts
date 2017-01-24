@@ -11,9 +11,10 @@ import { DomainRoutingModule } from './domain-routing.module';
 
 import { DomainService } from './domain.service';
 
-import { DomainComponent }   from './domain.component';
-import { IPComponent }   from './ip.component';
-import { SubDomainsComponent }   from './sub-domains.component';
+import { DomainComponent }        from './domain.component';
+import { IPComponent }            from './ip.component';
+import { SubDomainsComponent }    from './sub-domains.component';
+import { WhoisComponent }         from './whois.component';
 
 @NgModule({
   imports: [
@@ -24,7 +25,7 @@ import { SubDomainsComponent }   from './sub-domains.component';
     TabsModule
   ],
   exports: [],
-  declarations: [DomainComponent, IPComponent, SubDomainsComponent],
+  declarations: [DomainComponent, IPComponent, SubDomainsComponent, WhoisComponent],
   providers: [DomainService],
 })
 export class DomainModule { }

@@ -1,0 +1,17 @@
+[
+  {
+    "domainId": 2,
+    "information": {
+      "registrant": "Digital Admin",
+      "registration": "Singapore Exchange Limited",
+      "email": "tecdigadmin@sgx.com",
+      "address": "",
+      "phone": "+65.62368888",
+      "creationDate": "1995-10-10 00:00:00",
+      "expireDate": "2021-10-10 00:00:00",
+      "updatedDate": "2016-08-23 00:00:00",
+      "registrar": "WEBCC",
+      "nameServer": ["ns1.sgx.com", "ns2.sgx.com"]
+    }
+  }
+]
