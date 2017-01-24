@@ -67,7 +67,7 @@
       "current-dns-data": "当前DNS数据",
       "type": "数据类型",
       "data": "数据内容",
-      "login-tip": "共13个，查看此信息需要确认用户权限，请 登录"
+      "login-tip": "共{{total}}个，查看此信息需要确认用户权限，请 登录"
     },
     "whois": "Whois",
     "certificate": "数字证书",

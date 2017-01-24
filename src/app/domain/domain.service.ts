@@ -33,6 +33,18 @@ export class DomainService {
     return this.getIPs().then((entities) => entities.find((entity) => entity.domainId === id));
   }
 
+  getSubDomains(): any {
+    return this.http.get('/assets/api/sub-domains.json')
+      .toPromise()
+      .then((res) => res.json())
+      .catch(this.handleError);
+  }
+
+  getSubDomainsByDomainId(id: number): any {
+    return this.getSubDomains()
+      .then((entities) => entities.find((entity) => entity.domainId === id));
+  }
+
   private handleError (error: Response | any) {
     // In a real world app, we might use a remote logging infrastructure
     let errMsg: string;

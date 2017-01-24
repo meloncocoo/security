@@ -1,0 +1,12 @@
+[
+  {
+    "domainId": 2,
+    "subDomains": {
+      "domains": ["e*.sgx.com", "e*.sgx.com", "e*.sgxdo.sgx.com", "*.its.sgx.com", "r*.sgx.com"] ,
+      "total": 125
+    },
+    "currentDNSData": [
+      { "type": "A", "data": "107.162.133.6" }  
+    ]
+  }
+]

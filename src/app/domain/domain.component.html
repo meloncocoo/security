@@ -77,48 +77,7 @@
     </tab>
     <tab>
       <template tabHeading>{{'domain.sub-domains.title' | translate}}</template>
-      <div class="panel panel-default span-list">
-        <div class="panel-heading"><h2 class="panel-title">{{'domain.sub-domains.sub-domains' | translate}}</h2></div>
-        <div class="alert alert-warning">{{'domain.sub-domains.login-tip' | translate}}</div>
-        <div class="panel-body">
-          <div class="row">
-            <div class="col-md-6">
-              <span>p*.cd.ncsi.com.cn</span>
-            </div>
-            <div class="col-md-6">
-              <span>c*.ncsi.com.cn</span>
-            </div>
-            <div class="col-md-6">
-              <span>t*.ncsi.com.cn</span>
-            </div>
-            <div class="col-md-6">
-              <span>w*.ncsi.com.cn</span>
-            </div>
-            <div class="col-md-6">
-              <span>l*.ncsi.com.cn</span>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="panel panel-default">
-        <div class="panel-heading"><h2 class="panel-title">{{'domain.sub-domains.current-dns-data' | translate}}</h2></div>
-        <div class="panel-body">
-          <table class="table table-condensed table-borderless">
-            <thead>
-              <tr>
-                <th style="width: 120px;">{{'domain.sub-domains.type' | translate}}</th>
-                <th>{{'domain.sub-domains.data' | translate}}</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>A</td>
-                <td>203.126.130.51</td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
-      </div>
+      <sub-domains></sub-domains>
     </tab>
     <tab>
       <template tabHeading>{{'domain.whois' | translate}}</template>

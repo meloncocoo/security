@@ -1,0 +1,34 @@
+<div *ngIf="entity && entity.subDomains" class="panel panel-default span-list">
+  <div class="panel-heading">
+    <h2 class="panel-title">{{'domain.sub-domains.sub-domains' | translate}}</h2>
+  </div>
+  <div class="alert alert-warning">{{'domain.sub-domains.login-tip' | translate:entity.subDomains}}</div>
+  <div class="panel-body">
+    <div *ngIf="entity.subDomains.domains" class="row">
+      <div *ngFor="let item of entity.subDomains.domains" class="col-md-6">
+        <span>{{item}}</span>
+      </div>
+    </div>
+  </div>
+</div>
+<div *ngIf="entity && entity.currentDNSData" class="panel panel-default">
+  <div class="panel-heading">
+    <h2 class="panel-title">{{'domain.sub-domains.current-dns-data' | translate}}</h2>
+  </div>
+  <div class="panel-body">
+    <table class="table table-condensed table-borderless">
+      <thead>
+        <tr>
+          <th style="width: 120px;">{{'domain.sub-domains.type' | translate}}</th>
+          <th>{{'domain.sub-domains.data' | translate}}</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let item of entity.currentDNSData">
+          <td>{{item.type}}</td>
+          <td>{{item.data}}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>

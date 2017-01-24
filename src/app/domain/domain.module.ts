@@ -13,6 +13,7 @@ import { DomainService } from './domain.service';
 
 import { DomainComponent }   from './domain.component';
 import { IPComponent }   from './ip.component';
+import { SubDomainsComponent }   from './sub-domains.component';
 
 @NgModule({
   imports: [
@@ -23,7 +24,7 @@ import { IPComponent }   from './ip.component';
     TabsModule
   ],
   exports: [],
-  declarations: [DomainComponent, IPComponent],
+  declarations: [DomainComponent, IPComponent, SubDomainsComponent],
   providers: [DomainService],
 })
 export class DomainModule { }
