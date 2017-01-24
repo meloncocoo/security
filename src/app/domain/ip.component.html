@@ -1,0 +1,62 @@
+<div *ngIf="entity" class="panel panel-default">
+  <div class="panel-heading">
+    <h2 class="panel-title">{{'domain.IP.address' | translate}}</h2>
+  </div>
+  <div class="panel-body">
+    <table class="table table-condensed table-borderless">
+      <tbody>
+        <tr>
+          <th>{{'domain.IP.address' | translate}}</th>
+          <td><a href="javascript:;">{{entity.ipAddress}}</a> <a href="javascript:;">{{'domain.IP.ip-counts' | translate:entity}}</a></td>
+        </tr>
+        <tr>
+          <th>{{'domain.IP.location' | translate}}</th>
+          <td>{{entity.location}}</td>
+        </tr>
+        <tr>
+          <th>{{'domain.IP.ASN' | translate}}</th>
+          <td>{{entity.asn}}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+<div *ngIf="entity && entity.history" class="panel panel-default">
+  <div class="panel-heading">
+    <h2 class="panel-title">{{'domain.IP.history' | translate}}</h2>
+  </div>
+  <div class="panel-body">
+    <table class="table table-condensed table-borderless">
+      <thead>
+        <tr>
+          <th>{{'domain.IP.time' | translate}}</th>
+          <th>{{'domain.IP.IP' | translate}}</th>
+          <th>{{'domain.IP.region' | translate}}</th>
+          <th>{{'domain.IP.province' | translate}}</th>
+          <th>{{'domain.IP.carrier' | translate}}</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let item of entity.history">
+          <td>{{item.time}}</td>
+          <td>{{item.ip}}</td>
+          <td>{{item.region}}</td>
+          <td>{{item.province}}</td>
+          <td>{{item.carrier}}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+<div *ngIf="entity && entity.reverseIps" class="panel panel-default span-list">
+  <div class="panel-heading">
+    <h2 class="panel-title">{{'domain.IP.domain-list' | translate}}</h2>
+  </div>
+  <div class="panel-body">
+    <div class="row">
+      <div *ngFor="let item of entity.reverseIps" class="col-md-6">
+        <span>{{item.domain}}</span>
+      </div>
+    </div>
+  </div>
+</div>

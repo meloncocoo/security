@@ -49,6 +49,7 @@
     "IP": {
       "title": "IP",
       "address": "IP address",
+      "ip-counts": "({{ipCounts}} domains share this address)",
       "location": "Location",
       "ASN": "ASN",
 

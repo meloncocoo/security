@@ -9,18 +9,28 @@ export class DomainService {
   private url: string = `${API}`;
 
   constructor(private http: Http) {
-    console.log(this.url);
   }
 
-  getDomains(): Promise<Domain[]> {
+  getDomains(): any {
     return this.http.get('/assets/api/domain.json')
       .toPromise()
-      .then((res) => res.json() as Domain[])
+      .then((res) => res.json())
       .catch(this.handleError);
   }
 
-  getDomainByName(name: string): Promise<Domain> {
-    return this.getDomains().then((entities) => entities.find((entity) => entity.name === 'name'));
+  getDomainByName(name: string): any {
+    return this.getDomains().then((entities) => entities.find((entity) => entity.name === name));
+  }
+
+  getIPs(): any {
+    return this.http.get('/assets/api/ip.json')
+      .toPromise()
+      .then((res) => res.json())
+      .catch(this.handleError);
+  }
+
+  getIPsByDomainId(id: number): any {
+    return this.getIPs().then((entities) => entities.find((entity) => entity.domainId === id));
   }
 
   private handleError (error: Response | any) {

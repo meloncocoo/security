@@ -1,0 +1,27 @@
+[{
+  "id": 1,
+  "domainId": 2,
+  "ipAddress": "107.162.133.6",
+  "ipCounts": 11,
+  "location": "Singapore,Singapore (defense.net)",
+  "asn": "55002 （DEFENSE-NET - Defense.Net, Inc, US）",
+  "history": [
+    { "time": "2017-01-23", "ip": "107.162.*.*", "region": "Singapore", "province": "Singapore", "carrier": "defense.net" },
+    { "time": "2017-01-18", "ip": "107.162.*.*", "region": "Singapore", "province": "Singapore", "carrier": "defense.net" },
+    { "time": "2017-01-17", "ip": "107.162.*.*", "region": "Singapore", "province": "Singapore", "carrier": "defense.net" },
+    { "time": "2017-01-09", "ip": "107.162.*.*", "region": "Singapore", "province": "Singapore", "carrier": "defense.net" },
+    { "time": "2017-01-03", "ip": "107.162.*.*", "region": "Singapore", "province": "Singapore", "carrier": "defense.net" }
+  ],
+  "reverseIps": [
+    { "domain": "sgx.com" },
+    { "domain": "catalist.sgx.com" },
+    { "domain": "www.catalist.sgx.com" },
+    { "domain": "css.sgx.com" },
+    { "domain": "img.sgx.com" },
+    { "domain": "www.questdtupgrade.sgx.com" },
+    { "domain": "res.sgx.com" },
+    { "domain": "research.sgx.com" },
+    { "domain": "www.sgxaccess.sgx.com" },
+    { "domain": "www.sgxclear.sgx.com" }
+  ]
+}]

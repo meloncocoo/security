@@ -47,6 +47,7 @@
     "IP": {
       "title": "IP分析",
       "address": "IP地址",
+      "ip-counts": "（共有 {{ipCounts}} 个域名指向此地址）",
       "location": "地理位置",
       "ASN": "ASN",
 

@@ -1,4 +1,5 @@
 import { NgModule } from '@angular/core';
+import { HttpModule } from '@angular/http';
 
 import {
   TabsModule
@@ -11,16 +12,18 @@ import { DomainRoutingModule } from './domain-routing.module';
 import { DomainService } from './domain.service';
 
 import { DomainComponent }   from './domain.component';
+import { IPComponent }   from './ip.component';
 
 @NgModule({
   imports: [
     CoreModule,
     SharedModule,
+    HttpModule,
     DomainRoutingModule,
     TabsModule
   ],
   exports: [],
-  declarations: [DomainComponent],
+  declarations: [DomainComponent, IPComponent],
   providers: [DomainService],
 })
 export class DomainModule { }

@@ -1,3 +1,4 @@
 [
-  { "id": 1, "name": "www.ncsi.com.cn", "registrar": "北京中科三方网络技术有限公司*", "dnsServer": "pridns1.ncs.com.sg; dns.ncsi.com.cn*", "alexaRank": "N/A"}
+  { "id": 1, "name": "www.ncsi.com.cn", "registrar": "北京中科三方网络技术有限公司*", "dnsServer": "pridns1.ncs.com.sg; dns.ncsi.com.cn*", "alexaRank": "N/A", "queryHot": 75},
+  { "id": 2, "name": "www.sgx.com", "registrar": "WEBCC", "dnsServer": "ns1.sgx.com; ns2.sgx.com", "alexaRank": "19804", "queryHot": 23}
 ]

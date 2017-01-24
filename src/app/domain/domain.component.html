@@ -1,7 +1,7 @@
 <header [showSearchBox]="true" [hideMenu]="true"></header>
-<div class="container main-body" bodyStyle [body-class]="['app-domain']">
+<div *ngIf="entity" class="container main-body" bodyStyle [body-class]="['app-domain']">
   <div class="panel panel-default">
-    <div class="panel-heading">www.ncsi.com.cn <small>{{'domain.title' | translate}}</small></div>
+    <div class="panel-heading">{{entity.name}} <small>{{'domain.title' | translate}}</small></div>
     <div class="panel-body">
       <div class="row">
         <div class="col-md-8">
@@ -9,15 +9,15 @@
             <tbody>
               <tr>
                 <th>{{'domain.DNS' | translate}}</th>
-                <td>北京中科三方网络技术有限公司*</td>
+                <td>{{entity.registrar}}</td>
               </tr>
               <tr>
                 <th>{{'domain.DNS-server' | translate}}</th>
-                <td>pridns1.ncs.com.sg; dns.ncsi.com.cn*</td>
+                <td>{{entity.dnsServer}}</td>
               </tr>
               <tr>
                 <th>{{'domain.alexa-rank' | translate}}</th>
-                <td>N/A</td>
+                <td>{{entity.alexaRank}}</td>
               </tr>
               <tr>
                 <th>{{'domain.tags' | translate}}</th>
@@ -36,7 +36,7 @@
           </table>
         </div>
         <div class="col-md-4 text-center">
-          <canvas gauge [value]="20">gauge</canvas>
+          <canvas gauge [value]="entity.queryHot">gauge</canvas>
           <h4><span class="label label-warning">查询热度</span></h4>
         </div>
       </div>
@@ -73,103 +73,7 @@
     </tab>
     <tab>
       <template tabHeading>{{'domain.IP.title' | translate}}</template>
-      <div class="panel panel-default">
-        <div class="panel-heading"><h2 class="panel-title">{{'domain.IP.address' | translate}}</h2></div>
-        <div class="panel-body">
-          <table class="table table-condensed table-borderless">
-            <tbody>
-              <tr>
-                <th>{{'domain.IP.address' | translate}}</th>
-                <td><a href="javascript:;">203.126.130.51</a> <a href="javascript:;">（共有 11 个域名指向此地址）</a></td>
-              </tr>
-              <tr>
-                <th>{{'domain.IP.location' | translate}}</th>
-                <td>新加坡,新加坡</td>
-              </tr>
-              <tr>
-                <th>{{'domain.IP.ASN' | translate}}</th>
-                <td>3758 （SINGNET SingNet, SG）</td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
-      </div>
-      <div class="panel panel-default">
-        <div class="panel-heading"><h2 class="panel-title">{{'domain.IP.history' | translate}}</h2></div>
-        <div class="panel-body">
-          <table class="table table-condensed table-borderless">
-            <thead>
-              <tr>
-                <th>{{'domain.IP.time' | translate}}</th>
-                <th>{{'domain.IP.IP' | translate}}</th>
-                <th>{{'domain.IP.region' | translate}}</th>
-                <th>{{'domain.IP.province' | translate}}</th>
-                <th>{{'domain.IP.carrier' | translate}}</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>2016-11-21</td>
-                <td>203.126.*.*</td>
-                <td>新加坡</td>
-                <td>新加坡</td>
-                <td></td>
-              </tr>
-              <tr>
-                <td>2016-05-01</td>
-                <td>113.11.*.*</td>
-                <td>新加坡</td>
-                <td>新加坡</td>
-                <td></td>
-              </tr>
-              <tr>
-                <td>2010-09-08</td>
-                <td>202.6.*.*</td>
-                <td>新加坡</td>
-                <td>新加坡</td>
-                <td></td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
-      </div>
-      <div class="panel panel-default span-list">
-        <div class="panel-heading"><h2 class="panel-title">{{'domain.IP.domain-list' | translate}}</h2></div>
-        <div class="panel-body">
-          <div class="row">
-            <div class="col-md-6">
-              <span>ncsi.com.cn</span>
-            </div>
-            <div class="col-md-6">
-              <span>www.ncsi.com.cn</span>
-            </div>
-            <div class="col-md-6">
-              <span>www.csalarm.cn</span>
-            </div>
-            <div class="col-md-6">
-              <span>www.consortio-usa.com</span>
-            </div>
-            <div class="col-md-6">
-              <span>www.ncs-group.com</span>
-            </div>
-            <div class="col-md-6">
-              <span>www.ncs-i.com</span>
-            </div>
-            <div class="col-md-6">
-              <span>surfnation.net</span>
-            </div>
-            <div class="col-md-6">
-              <span>www.surfnation.net</span>
-            </div>
-            <div class="col-md-6">
-              <span>ncs.com.sg</span>
-            </div>
-            <div class="col-md-6">
-              <span>www.ncs.com.sg</span>
-            </div>
-          </div>
-        </div>
-      </div>
+      <ip></ip>
     </tab>
     <tab>
       <template tabHeading>{{'domain.sub-domains.title' | translate}}</template>

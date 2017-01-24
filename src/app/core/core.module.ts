@@ -33,7 +33,12 @@ let COMPONENTS = [
     TabsModule.forRoot(),
     TooltipModule.forRoot()
   ],
-  exports: COMPONENTS,
+  exports: [
+    BrowserModule,
+    FormsModule,
+    HttpModule,
+    RouterModule
+  ].concat(COMPONENTS),
   declarations: COMPONENTS
 })
 export class CoreModule { }
