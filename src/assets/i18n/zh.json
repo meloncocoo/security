@@ -69,7 +69,24 @@
       "data": "数据内容",
       "login-tip": "共{{total}}个，查看此信息需要确认用户权限，请 登录"
     },
-    "whois": "Whois",
+    "whois": {
+      "title": "Whois",
+      "information": "Current registration information",
+      "date": "Date",
+      "updates": "Important update",
+      "history": "Whois History",
+      "login-tip": "To view the all the information, Login",
+      "type": {
+        "add": "Add",
+        "update": "Update",
+        "non-updates": "Non-critical updates"
+      },
+      "content": {
+        "register": "Register",
+        "email": "Email",
+        "institution": "Registration institution"
+      }
+    },
     "certificate": "数字证书",
     "visualization": "可视分析",
     "community": "情报社区",

@@ -18,7 +18,7 @@ export class DomainComponent implements OnInit {
   }
 
   getDomains() {
-    this.domainService.getDomainByName('www.ncsi.com.cn')
+    this.domainService.getDomainByName('www.sgx.com')
       .then((entity) => {
         this.entity = entity;
       });

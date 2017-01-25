@@ -71,7 +71,24 @@
       "data": "Data",
       "login-tip": "Total {{total}}, to view the all information, Login"
     },
-    "whois": "Whois",
+    "whois": {
+      "title": "Whois",
+      "information": "Current registration information",
+      "date": "Date",
+      "updates": "Important update",
+      "history": "Whois History",
+      "login-tip": "To view the all the information, Login",
+      "type": {
+        "add": "Add",
+        "update": "Update",
+        "non-updates": "Non-critical updates"
+      },
+      "content": {
+        "register": "Register",
+        "email": "Email",
+        "institution": "Registration institution"
+      }
+    },
     "certificate": "Certificate",
     "visualization": "Visualization",
     "community": "Community",

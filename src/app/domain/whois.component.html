@@ -1,6 +1,6 @@
 <div *ngIf="entity && entity.information" class="panel panel-default">
   <div class="panel-heading">
-    <h2 class="panel-title">Current registration information</h2>
+    <h2 class="panel-title">{{'domain.whois.information' | translate}}</h2>
   </div>
   <div class="panel-body">
     <table class="table table-condensed table-borderless">
@@ -44,6 +44,41 @@
         <tr>
           <th style="width: 30%;">Name Server</th>
           <td>{{entity.information.nameServer}}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+<div *ngIf="entity && entity.history" class="panel panel-default">
+  <div class="panel-heading">
+    <h2 class="panel-title">{{'domain.whois.history' | translate}}</h2>
+  </div>
+  <div class="alert alert-warning">{{'domain.whois.login-tip' | translate}}</div>
+  <div class="panel-body">
+    <table class="table table-condensed table-borderless table-striped">
+      <thead>
+        <tr>
+          <th style="width: 20%;">{{'domain.whois.date' | translate}}</th>
+          <th>{{'domain.whois.updates' | translate}}</th>
+          <th></th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let item of entity.history">
+          <td>{{item.date}}</td>
+          <td>
+            <span [ngSwitch]="item.updates.type">
+              <span *ngSwitchCase="1" class="label label-warning">{{'domain.whois.type.update' | translate}}</span>
+              <span *ngSwitchCase="2" class="label label-default">{{'domain.whois.type.non-updates' | translate}}</span>
+              <span *ngSwitchCase="3" class="label label-success">{{'domain.whois.type.add' | translate}}</span>
+              <span *ngSwitchDefault></span>
+            </span>
+          </td>
+          <td>
+            <span *ngIf="item.updates.register">{{'domain.whois.content.register' | translate}}: {{item.updates.register.from}} <i class="fa fa-arrow-right text-info"></i> {{item.updates.register.to}}</span><br>
+            <span *ngIf="item.updates.institution">{{'domain.whois.content.institution' | translate}}: {{item.updates.institution}}</span><br>
+            <span *ngIf="item.updates.email">{{'domain.whois.content.email' | translate}}: {{item.updates.email.from}} <i class="fa fa-arrow-right text-info"></i> {{item.updates.email.to}}</span>
+          </td>
         </tr>
       </tbody>
     </table>
