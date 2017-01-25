@@ -44,6 +44,7 @@ export class DomainComponent implements OnInit, OnDestroy {
   }
 
   onSearch(text) {
+    this.router.navigate(['domain', text]);
     clearInterval(this.timer);
     this.getDomains(text);
   }

@@ -1,5 +1,27 @@
 [
   {
+    "domainId": 1,
+    "information": {
+      "registrant": "新电信息科技（苏州）有限公司",
+      "registration": "",
+      "email": "linjian@ncsi.com.cn",
+      "address": "",
+      "phone": "",
+      "creationDate": "1999-09-14 00:00:00",
+      "expireDate": "2018-09-14 00:00:00",
+      "updatedDate": "",
+      "registrar": "北京中科三方网络技术有限公司*WEBCC",
+      "nameServer": ["pridns1.ncs.com.sg", "dns.ncsi.com.cn"]
+    },
+    "history": [
+      { "date": "2016-12-04", "updates": { "type": 2}},
+      { "date": "2016-06-06", "updates": { "type": 2}},
+      { "date": "2016-02-11", "updates": { "type": 2}},
+      { "date": "2016-02-07", "updates": { "type": 2}},
+      { "date": "2015-12-03", "updates": { "type": 2}}
+    ]
+  },
+  {
     "domainId": 2,
     "information": {
       "registrant": "Digital Admin",

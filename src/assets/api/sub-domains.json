@@ -1,5 +1,15 @@
 [
   {
+    "domainId": 1,
+    "subDomains": {
+      "domains": ["p*.cd.ncsi.com.cn", "c*.ncsi.com.cn", "t*.ncsi.com.cn", "w*.ncsi.com.cn", "l*.ncsi.com.cn"] ,
+      "total": 13
+    },
+    "currentDNSData": [
+      { "type": "A", "data": "203.126.130.51" }  
+    ]
+  },
+  {
     "domainId": 2,
     "subDomains": {
       "domains": ["e*.sgx.com", "e*.sgx.com", "e*.sgxdo.sgx.com", "*.its.sgx.com", "r*.sgx.com"] ,

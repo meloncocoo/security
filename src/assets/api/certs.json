@@ -1,5 +1,18 @@
 [
   {
+    "domainId": 1,
+    "information": [
+      {
+        "user": "ncs.com.sg",
+        "issuer": "Entrust Certification Authority - L1K",
+        "beginTime": "2016-04-29 10:41:46",
+        "disableTime": "2018-04-12 11:11:45",
+        "certificate": "D5:EE:10:7A:A0:04:3F:52:38:03:DE:99:F4:94:46:B6:A5:EF:3A:8E",
+        "status": 1
+      }
+    ]
+  },
+  {
     "domainId": 2,
     "information": [
       {
