@@ -1,7 +1,11 @@
 {
   "messages": {
     "no-data": "No data",
-    "no-sample-match": "No Sample match"
+    "no-sample-match": "No Sample match",
+    "no-scan-content": "Invalid input!",
+    "to-check-input": "Please check your input",
+    "to-auto-back": "s laters will redirect to previous page",
+    "to-back-text": "Return to the"
   },
   "header": {
     "title": "SECURITY",
@@ -26,6 +30,9 @@
     "analyse": "Analyse",
     "signin": "Sign in",
     "signup": "Sign up"
+  },
+  "links": {
+    "home": "Home"
   },
   "home": {
     "title": "THREAT ANALYSIS PLATFORM",

@@ -1,7 +1,11 @@
 {
   "messages": {
     "no-data": "无匹配数据",
-    "no-sample-match": "No Sample match"
+    "no-sample-match": "No Sample match",
+    "no-scan-content": "不能识别输入的内容的类型!",
+    "to-check-input": "请检查您输入的信息是否有误",
+    "to-auto-back": "秒后秒后自动跳转到上一页面",
+    "to-back-text": "手动返回"
   },
   "header": {
     "title": "安全分析",
@@ -26,6 +30,9 @@
     "analyse": "分析",
     "signin": "登录",
     "signup": "注册"
+  },
+  "links": {
+    "home": "首页"
   },
   "home": {
     "title": "威胁分析平台",

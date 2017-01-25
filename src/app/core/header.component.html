@@ -28,10 +28,10 @@
       <div class="navbar-left search-box">
         <form *ngIf="showSearchBox" class="navbar-form" role="search">
           <div class="input-group">
-            <input type="text" class="form-control" placeholder="IP、域名、文件HASH(MD5/SHA1/SHA256)">
+            <input type="text" #searchText class="form-control" placeholder="IP、域名、文件HASH(MD5/SHA1/SHA256)">
             <div class="input-group-btn">
               <span class="btn btn-default" placement="bottom" [tooltip]="'header.upload-tooltip' | translate"><i class="fa fa-upload"></i></span>
-              <span class="btn btn-default btn-info">{{'buttons.analyse' | translate}}</span>
+              <span class="btn btn-default btn-info" (click)="search.emit(searchText.value)">{{'buttons.analyse' | translate}}</span>
             </div>
           </div>
         </form>

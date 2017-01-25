@@ -1,4 +1,20 @@
-<header [showSearchBox]="true" [hideMenu]="true"></header>
+<header [showSearchBox]="true" [hideMenu]="true" (search)="onSearch($event)"></header>
+<div *ngIf="notFound" class="container main-body" bodyStyle [body-class]="['app-domain']">
+  <div class="row" style="min-height: 400px;">
+    <div class="col-md-4 text-right">
+      <span class="text-danger" style="font-size: 148px;"><i class="fa fa-search"></i></span>
+    </div>
+    <div class="col-md-8">
+      <h1 class="text-info">Oops!</h1>
+      <p>
+        {{'messages.no-scan-content' | translate}}<br>
+        {{'messages.to-check-input' | translate}}<br>
+        {{back.time}}{{'messages.to-auto-back' | translate}}<br>
+      </p>
+      <p>{{'messages.to-back-text' | translate}} <a routerLink="/home">{{'links.home' | translate}}</a></p>
+    </div>
+  </div>
+</div>
 <div *ngIf="entity" class="container main-body" bodyStyle [body-class]="['app-domain']">
   <div class="panel panel-default">
     <div class="panel-heading">{{entity.name}} <small>{{'domain.title' | translate}}</small></div>

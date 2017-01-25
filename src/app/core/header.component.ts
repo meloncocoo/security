@@ -1,4 +1,4 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 import { TranslateService } from 'ng2-translate';
 import { Cookie } from 'ng2-cookies/ng2-cookies';
 
@@ -7,7 +7,8 @@ import { Cookie } from 'ng2-cookies/ng2-cookies';
   selector: 'header',
   templateUrl: 'header.component.html'
 })
-export class HeaderComponent /*implements OnInit*/ {
+export class HeaderComponent implements OnInit {
+  @Output() search = new EventEmitter();
   @Input() public showSearchBox: boolean = false;
   @Input() public hideMenu: boolean = false;
 
@@ -19,7 +20,9 @@ export class HeaderComponent /*implements OnInit*/ {
     this.translate.use(lang);
   }
 
-  // ngOnInit() { }
+  ngOnInit() {
+    
+  }
 
   setLanguage(lang: string) {
     Cookie.set('language', lang);
