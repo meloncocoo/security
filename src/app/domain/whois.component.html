@@ -66,18 +66,16 @@
       <tbody>
         <tr *ngFor="let item of entity.history">
           <td>{{item.date}}</td>
-          <td>
-            <span [ngSwitch]="item.updates.type">
-              <span *ngSwitchCase="1" class="label label-warning">{{'domain.whois.type.update' | translate}}</span>
-              <span *ngSwitchCase="2" class="label label-default">{{'domain.whois.type.non-critical' | translate}}</span>
-              <span *ngSwitchCase="3" class="label label-success">{{'domain.whois.type.add' | translate}}</span>
-              <span *ngSwitchDefault></span>
-            </span>
+          <td [ngSwitch]="item.updates.type">
+            <span *ngSwitchCase="1" class="label label-warning">{{'domain.whois.type.update' | translate}}</span>
+            <span *ngSwitchCase="2" class="label label-default">{{'domain.whois.type.non-critical' | translate}}</span>
+            <span *ngSwitchCase="3" class="label label-success">{{'domain.whois.type.add' | translate}}</span>
+            <span *ngSwitchDefault></span>
           </td>
           <td>
-            <span *ngIf="item.updates.register">{{'domain.whois.content.register' | translate}}: {{item.updates.register.from}} <i class="fa fa-arrow-right text-info"></i> {{item.updates.register.to}}</span><br>
-            <span *ngIf="item.updates.registration">{{'domain.whois.content.registration' | translate}}: {{item.updates.registration}}</span><br>
-            <span *ngIf="item.updates.email">{{'domain.whois.content.email' | translate}}: {{item.updates.email.from}} <i class="fa fa-arrow-right text-info"></i> {{item.updates.email.to}}</span>
+            <div *ngIf="item.updates.register">{{'domain.whois.content.register' | translate}}: {{item.updates.register.from}} <i class="fa fa-arrow-right text-info"></i> {{item.updates.register.to}}</div>
+            <div *ngIf="item.updates.registration">{{'domain.whois.content.registration' | translate}}: {{item.updates.registration}}</div>
+            <div *ngIf="item.updates.email">{{'domain.whois.content.email' | translate}}: {{item.updates.email.from}} <i class="fa fa-arrow-right text-info"></i> {{item.updates.email.to}}</div>
           </td>
         </tr>
       </tbody>

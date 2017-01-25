@@ -48,4 +48,30 @@
     { "domain": "www.sgxaccess.sgx.com" },
     { "domain": "www.sgxclear.sgx.com" }
   ]
+}, {
+  "id": 3,
+  "domainId": 3,
+  "ipAddress": "23.15.100.191",
+  "ipCounts": 16,
+  "location": "Singapore,Singapore (akamai.com)",
+  "asn": "20940 （AKAMAI-ASN1 , US）",
+  "history": [
+    { "time": "2017-01-22", "ip": "23.15.*.*", "region": "Singapore", "province": "Singapore", "carrier": "akamai.com" },
+    { "time": "2017-01-17", "ip": "104.116.*.*", "region": "Singapore", "province": "Singapore", "carrier": "akamai.com" },
+    { "time": "2017-01-15", "ip": "23.15.*.*", "region": "Singapore", "province": "Singapore", "carrier": "akamai.com" },
+    { "time": "2017-01-12", "ip": "104.116.*.*", "region": "Singapore", "province": "Singapore", "carrier": "akamai.com" },
+    { "time": "2017-01-11", "ip": "23.15.*.*", "region": "Singapore", "province": "Singapore", "carrier": "akamai.com" }
+  ],
+  "reverseIps": [
+    { "domain": "www.dbs.com.cn" },
+    { "domain": "www.dbs.com" },
+    { "domain": "www.dbsam.com" },
+    { "domain": "www.dbs.com.hk" },
+    { "domain": "www.dbsbank.co.id" },
+    { "domain": "www.dbsbank.in" },
+    { "domain": "user-att-107-193-56-0.e2920.b.akamaiedge.net" },
+    { "domain": "user-att-107-211-112-0.e2920.b.akamaiedge.net" },
+    { "domain": "e2920.dscb.akamaiedge.net.0.1.cn.akamaiedge.net" },
+    { "domain": "e2920.dscb.akamaiedge.net" }
+  ]
 }]

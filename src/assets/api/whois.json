@@ -48,5 +48,26 @@
       { "date": "2015-09-01", "updates": { "type": 1, "email": { "from": "******", "to": "******" }, "register": { "from": "******", "to": "******" }}},
       { "date": "2014-05-01", "updates": { "type": 3, "registration": "", "register": { "from": "******", "to": "******" }}}      
     ]
+  },
+  {
+    "domainId": 3,
+    "information": {
+      "registrant": "星展银行（中国）有限公司",
+      "registration": "",
+      "email": "kylechen@dbs.com",
+      "address": "",
+      "phone": "",
+      "creationDate": "2001-04-30 00:00:00",
+      "expireDate": "2022-04-30 00:00:00",
+      "updatedDate": "",
+      "registrar": "北京新网数码信息技术有限公司",
+      "nameServer": ["dnssec1.singnet.com.sg", "po.dbs.com.sg", "secdns2.starhub.net.sg", "dnssec2.singnet.com.sg", "dnssec3.singnet.com.sg", "secdns.starhub.net.sg"]
+    },
+    "history": [
+      { "date": "2016-02-11", "updates": { "type": 2}},
+      { "date": "2016-02-01", "updates": { "type": 2}},
+      { "date": "2016-01-14", "updates": { "type": 2}},
+      { "date": "2015-10-01", "updates": { "type": 2}}
+    ]
   }
 ]

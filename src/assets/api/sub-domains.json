@@ -18,5 +18,17 @@
     "currentDNSData": [
       { "type": "A", "data": "107.162.133.6" }  
     ]
+  },
+  {
+    "domainId": 3,
+    "subDomains": {
+      "domains": ["m*.dbs.com.cn", "i*.dbs.com.cn", "d*.dbs.com.cn", "d*.dbs.com.cn", "d*.dbs.com.cn"] ,
+      "total": 14
+    },
+    "currentDNSData": [
+      { "type": "A", "data": "23.15.100.191" },
+      { "type": "CNAME", "data": "www.dbs.com.cn.edgekey.net" },
+      { "type": "MX", "data": "www.dbs.com.cn.edgekey.net, www.dbs.com.cn.edgekey.net.globalredir.akadns.net, e2920.b.akamaiedge.net" }
+    ]
   }
 ]

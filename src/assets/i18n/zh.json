@@ -118,7 +118,8 @@
         "name": "状态",
         "valid": "有效证书",
         "unvalid": "无效证书"
-      }
+      },
+      "no-data": "未采集到数字证书"
     },
     "visualization": "可视分析",
     "community": "情报社区",

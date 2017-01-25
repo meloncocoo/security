@@ -120,7 +120,8 @@
         "name": "Status",
         "valid": "Valid Certificate",
         "unvalid": "Unvalid Certificate"
-      }
+      },
+      "no-data": "No Digital Certificate Information Collected"
     },
     "visualization": "Visualization",
     "community": "Community",
