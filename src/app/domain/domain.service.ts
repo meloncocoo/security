@@ -57,6 +57,18 @@ export class DomainService {
       .then((entities) => entities.find((entity) => entity.domainId === id));
   }
 
+  getCerts(): any {
+    return this.http.get('/assets/api/certs.json')
+      .toPromise()
+      .then((res) => res.json())
+      .catch(this.handleError);
+  }
+
+  getCertsByDomainId(id: number): any {
+    return this.getCerts()
+      .then((entities) => entities.find((entity) => entity.domainId === id));
+  }
+
   private handleError (error: Response | any) {
     // In a real world app, we might use a remote logging infrastructure
     let errMsg: string;

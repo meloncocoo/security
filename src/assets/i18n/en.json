@@ -73,7 +73,19 @@
     },
     "whois": {
       "title": "Whois",
-      "information": "Current registration information",
+      "information": {
+        "title": "Current registration information",
+        "registrant": "Registrant",
+        "registration": "Registration",
+        "email": "Email",
+        "address": "Address",
+        "phone": "Phone",
+        "creation-date": "Creation Date",
+        "expire-eate": "Expire Date",
+        "updated-date": "Updated Date",
+        "registrar": "Registrar",
+        "name-server": "Name Server"
+      },
       "date": "Date",
       "updates": "Important update",
       "history": "Whois History",
@@ -81,7 +93,7 @@
       "type": {
         "add": "Add",
         "update": "Update",
-        "non-updates": "Non-critical updates"
+        "non-critical": "Non-critical updates"
       },
       "content": {
         "register": "Register",
@@ -89,7 +101,20 @@
         "institution": "Registration institution"
       }
     },
-    "certificate": "Certificate",
+    "cert": {
+      "title": "Certificate",
+      "information": "SSL Certificate Information",
+      "user": "User",
+      "issuer": "Issuer",
+      "begin-time": "Begin time",
+      "disable-time": "Disable time",
+      "certificate": "Certificate thumb print",
+      "status": {
+        "name": "Status",
+        "valid": "Valid Certificate",
+        "unvalid": "Unvalid Certificate"
+      }
+    },
     "visualization": "Visualization",
     "community": "Community",
 

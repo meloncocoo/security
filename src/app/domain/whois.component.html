@@ -1,48 +1,48 @@
 <div *ngIf="entity && entity.information" class="panel panel-default">
   <div class="panel-heading">
-    <h2 class="panel-title">{{'domain.whois.information' | translate}}</h2>
+    <h2 class="panel-title">{{'domain.whois.information.title' | translate}}</h2>
   </div>
   <div class="panel-body">
     <table class="table table-condensed table-borderless">
       <tbody>
         <tr>
-          <th style="width: 30%;">Registrant</th>
+          <th style="width: 30%;">{{'domain.whois.information.registrant' | translate}}</th>
           <td>{{entity.information.registrant}}</td>
         </tr>
         <tr>
-          <th style="width: 30%;">Registration</th>
+          <th style="width: 30%;">{{'domain.whois.information.registration' | translate}}</th>
           <td>{{entity.information.registration}}</td>
         </tr>
         <tr>
-          <th style="width: 30%;">Email</th>
+          <th style="width: 30%;">{{'domain.whois.information.email' | translate}}</th>
           <td>{{entity.information.email}}</td>
         </tr>
         <tr>
-          <th style="width: 30%;">Address</th>
+          <th style="width: 30%;">{{'domain.whois.information.address' | translate}}</th>
           <td>{{entity.information.address}}</td>
         </tr>
         <tr>
-          <th style="width: 30%;">Phone</th>
+          <th style="width: 30%;">{{'domain.whois.information.phone' | translate}}</th>
           <td>{{entity.information.phone}}</td>
         </tr>
         <tr>
-          <th style="width: 30%;">Creation Date</th>
+          <th style="width: 30%;">{{'domain.whois.information.creation-date' | translate}}</th>
           <td>{{entity.information.creationDate}}</td>
         </tr>
         <tr>
-          <th style="width: 30%;">Expire Date</th>
+          <th style="width: 30%;">{{'domain.whois.information.expire-eate' | translate}}</th>
           <td>{{entity.information.expireDate}}</td>
         </tr>
         <tr>
-          <th style="width: 30%;">Updated Date</th>
+          <th style="width: 30%;">{{'domain.whois.information.updated-date' | translate}}</th>
           <td>{{entity.information.updatedDate}}</td>
         </tr>
         <tr>
-          <th style="width: 30%;">Registrar</th>
+          <th style="width: 30%;">{{'domain.whois.information.registrar' | translate}}</th>
           <td>{{entity.information.registrar}}</td>
         </tr>
         <tr>
-          <th style="width: 30%;">Name Server</th>
+          <th style="width: 30%;">{{'domain.whois.information.name-server' | translate}}</th>
           <td>{{entity.information.nameServer}}</td>
         </tr>
       </tbody>
@@ -69,14 +69,14 @@
           <td>
             <span [ngSwitch]="item.updates.type">
               <span *ngSwitchCase="1" class="label label-warning">{{'domain.whois.type.update' | translate}}</span>
-              <span *ngSwitchCase="2" class="label label-default">{{'domain.whois.type.non-updates' | translate}}</span>
+              <span *ngSwitchCase="2" class="label label-default">{{'domain.whois.type.non-critical' | translate}}</span>
               <span *ngSwitchCase="3" class="label label-success">{{'domain.whois.type.add' | translate}}</span>
               <span *ngSwitchDefault></span>
             </span>
           </td>
           <td>
             <span *ngIf="item.updates.register">{{'domain.whois.content.register' | translate}}: {{item.updates.register.from}} <i class="fa fa-arrow-right text-info"></i> {{item.updates.register.to}}</span><br>
-            <span *ngIf="item.updates.institution">{{'domain.whois.content.institution' | translate}}: {{item.updates.institution}}</span><br>
+            <span *ngIf="item.updates.registration">{{'domain.whois.content.registration' | translate}}: {{item.updates.registration}}</span><br>
             <span *ngIf="item.updates.email">{{'domain.whois.content.email' | translate}}: {{item.updates.email.from}} <i class="fa fa-arrow-right text-info"></i> {{item.updates.email.to}}</span>
           </td>
         </tr>

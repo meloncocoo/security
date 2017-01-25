@@ -15,6 +15,7 @@ import { DomainComponent }        from './domain.component';
 import { IPComponent }            from './ip.component';
 import { SubDomainsComponent }    from './sub-domains.component';
 import { WhoisComponent }         from './whois.component';
+import { CertificateComponent }   from './cert.component';
 
 @NgModule({
   imports: [
@@ -25,7 +26,7 @@ import { WhoisComponent }         from './whois.component';
     TabsModule
   ],
   exports: [],
-  declarations: [DomainComponent, IPComponent, SubDomainsComponent, WhoisComponent],
+  declarations: [DomainComponent, IPComponent, SubDomainsComponent, WhoisComponent, CertificateComponent],
   providers: [DomainService],
 })
 export class DomainModule { }

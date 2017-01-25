@@ -1,0 +1,23 @@
+[
+  {
+    "domainId": 2,
+    "information": [
+      {
+        "user": "www.sgx.com",
+        "issuer": "GlobalSign Extended Validation CA - SHA256 - G2Issuer",
+        "beginTime": "2016-01-11 07:12:10",
+        "disableTime": "2017-06-19 18:31:02",
+        "certificate": "E7:69:69:73:D0:38:AE:E3:CC:4D:8B:B4:BE:9C:34:2C:30:1B:9D:6D",
+        "status": 1
+      },
+      {
+        "user": "www.sgx.com",
+        "issuer": "GlobalSign Extended Validation CA - SHA256 - G2",
+        "beginTime": "2015-06-19 18:31:02",
+        "disableTime": "2017-06-19 18:31:02",
+        "certificate": "8D:17:CB:96:23:AB:0F:B1:FB:BD:E7:19:B3:57:07:F7:C3:E8:EF:E0",
+        "status": 1
+      }
+    ]
+  }
+]

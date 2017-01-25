@@ -71,23 +71,48 @@
     },
     "whois": {
       "title": "Whois",
-      "information": "Current registration information",
-      "date": "Date",
-      "updates": "Important update",
-      "history": "Whois History",
-      "login-tip": "To view the all the information, Login",
+      "information": {
+        "title": "当前注册信息",
+        "registrant": "注册者",
+        "registration": "注册机构",
+        "email": "邮箱",
+        "address": "地址",
+        "phone": "电话",
+        "creation-date": "注册时间",
+        "expire-eate": "过期时间",
+        "updated-date": "更新时间",
+        "registrar": "域名服务商",
+        "name-server": "域名服务器"
+      },
+      "date": "日期",
+      "updates": "重要信息更新",
+      "history": "历史注册信息",
+      "login-tip": "查看此信息需要确认用户权限，请 登录",
       "type": {
-        "add": "Add",
-        "update": "Update",
-        "non-updates": "Non-critical updates"
+        "add": "新增",
+        "update": "修改",
+        "non-critical": "非重要更新"
       },
       "content": {
-        "register": "Register",
-        "email": "Email",
-        "institution": "Registration institution"
+        "register": "注册者",
+        "email": "邮箱",
+        "registration": "注册机构"
       }
     },
-    "certificate": "数字证书",
+    "cert": {
+      "title": "数字证书",
+      "information": "SSL相关证书信息",
+      "user": "使用者",
+      "issuer": "颁发者",
+      "begin-time": "开始时间",
+      "disable-time": "失效时间",
+      "certificate": "证书指纹",
+      "status": {
+        "name": "状态",
+        "valid": "有效证书",
+        "unvalid": "无效证书"
+      }
+    },
     "visualization": "可视分析",
     "community": "情报社区",
 

@@ -1,0 +1,41 @@
+<div *ngIf="entity && entity.information" class="panel panel-default">
+  <div class="panel-heading">
+    <h2 class="panel-title">{{'domain.cert.information' | translate}}</h2>
+  </div>
+  <div *ngFor="let item of entity.information" class="panel-body">
+    <table class="table table-condensed table-borderless">
+      <tbody>
+        <tr>
+          <th>{{'domain.cert.user' | translate}}</th>
+          <td>{{item.user}}</td>
+        </tr>
+        <tr>
+          <th>{{'domain.cert.issuer' | translate}}</th>
+          <td>{{item.issuer}}</td>
+        </tr>
+        <tr>
+          <th>{{'domain.cert.begin-time' | translate}}</th>
+          <td>{{item.beginTime}}</td>
+        </tr>
+        <tr>
+          <th>{{'domain.cert.disable-time' | translate}}</th>
+          <td>{{item.disableTime}}</td>
+        </tr>
+        <tr>
+          <th>{{'domain.cert.certificate' | translate}}</th>
+          <td><a href="javascript:;">{{item.certificate}}</a></td>
+        </tr>
+        <tr>
+          <th>{{'domain.cert.status.name' | translate}}</th>
+          <td>
+            <span [ngSwitch]="item.status">
+              <span *ngSwitchCase="1" class="label label-success">{{'domain.cert.status.valid' | translate}}</span>
+              <span *ngSwitchCase="2" class="label label-danger">{{'domain.cert.status.unvalid' | translate}}</span>
+              <span *ngSwitchDefault></span>
+            </span>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>

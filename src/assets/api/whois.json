@@ -24,7 +24,7 @@
       { "date": "2016-02-02", "updates": { "type": 1, "email": { "from": "******", "to": "******" }, "register": { "from": "******", "to": "******" }}},
       { "date": "2015-12-24", "updates": { "type": 2}},
       { "date": "2015-09-01", "updates": { "type": 1, "email": { "from": "******", "to": "******" }, "register": { "from": "******", "to": "******" }}},
-      { "date": "2014-05-01", "updates": { "type": 3, "institution": "", "register": { "from": "******", "to": "******" }}}      
+      { "date": "2014-05-01", "updates": { "type": 3, "registration": "", "register": { "from": "******", "to": "******" }}}      
     ]
   }
 ]
