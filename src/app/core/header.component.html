@@ -26,12 +26,12 @@
         </li>
       </ul>
       <div class="navbar-left search-box">
-        <form *ngIf="showSearchBox" class="navbar-form" role="search">
+        <form *ngIf="showSearchBox" class="navbar-form" #searchForm="ngForm" (ngSubmit)="search.emit(searchInput.value)" role="form">
           <div class="input-group">
-            <input type="text" #searchText class="form-control" placeholder="IP、域名、文件HASH(MD5/SHA1/SHA256)">
+            <input type="text" required #searchInput name="text" class="form-control" placeholder="IP、域名、文件HASH(MD5/SHA1/SHA256)">
             <div class="input-group-btn">
               <span class="btn btn-default" placement="bottom" [tooltip]="'header.upload-tooltip' | translate"><i class="fa fa-upload"></i></span>
-              <span class="btn btn-default btn-info" (click)="search.emit(searchText.value)">{{'buttons.analyse' | translate}}</span>
+              <button type="submit" class="btn btn-default btn-info" [disabled]="!searchForm.form.valid">{{'buttons.analyse' | translate}}</button>
             </div>
           </div>
         </form>
