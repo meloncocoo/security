@@ -3,7 +3,7 @@ import { TranslateService } from 'ng2-translate';
 import { Cookie } from 'ng2-cookies/ng2-cookies';
 
 @Component({
-  // moduleId: module.id,
+  // moduleId: module.id,\
   selector: 'header',
   templateUrl: 'header.component.html'
 })

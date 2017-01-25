@@ -3,13 +3,15 @@
   <div class="container home">
     <h1 class="text-center title">{{'home.title' | translate}}</h1>
     <div class="text-center search">
-      <div class="input-group input-group-lg">
-        <input type="text" class="form-control" [attr.placeholder]="'search.input' | translate">
-        <div class="input-group-btn">
-          <span class="btn btn-default" placement="bottom" [tooltip]="'header.upload-tooltip' | translate"><i class="fa fa-upload"></i></span>
-          <span class="btn btn-default btn-info" (click)="doSearch()">{{'buttons.analyse' | translate}}</span>
+      <form #searchForm="ngForm" (ngSubmit)="onSubmit()" role="form">
+        <div class="input-group input-group-lg">
+          <input type="text" required [(ngModel)]="text" name="text" class="form-control" [attr.placeholder]="'search.input' | translate">
+          <div class="input-group-btn">
+            <span class="btn btn-default" placement="bottom" [tooltip]="'header.upload-tooltip' | translate"><i class="fa fa-upload"></i></span>
+            <button type="submit" class="btn btn-default btn-info" [disabled]="!searchForm.form.valid">{{'buttons.analyse' | translate}}</button>
+          </div>
         </div>
-      </div>
+      </form>
     </div>
     <p class="text-center remark">{{'search.example' | translate}}</p>
     <p class="text-center source-ip">{{'home.visitor' | translate}}<a href="javascript:;">58.247.19.61</a></p>

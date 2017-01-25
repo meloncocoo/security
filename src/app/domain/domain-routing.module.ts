@@ -4,7 +4,7 @@ import { Routes, RouterModule } from '@angular/router';
 import { DomainComponent } from './domain.component';
 
 const routes: Routes = [
-  { path: 'domain', component: DomainComponent },
+  { path: 'domain/:text', component: DomainComponent },
 ];
 
 @NgModule({

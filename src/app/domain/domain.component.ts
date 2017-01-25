@@ -1,5 +1,5 @@
-import { Component, OnInit } from '@angular/core';
-import { Router } from '@angular/router';
+import { Component, OnInit, OnDestroy } from '@angular/core';
+import { ActivatedRoute, Params, Router } from '@angular/router';
 import { DomainService } from './domain.service';
 
 import { Domain } from './models/domain';
@@ -8,7 +8,7 @@ import { Domain } from './models/domain';
   selector: 'domain',
   templateUrl: 'domain.component.html'
 })
-export class DomainComponent implements OnInit {
+export class DomainComponent implements OnInit, OnDestroy {
   value = { value: 0 };
   private back = { time: 0 };
   private entity: any;
@@ -17,12 +17,17 @@ export class DomainComponent implements OnInit {
 
   constructor(
     private domainService: DomainService,
+    private route: ActivatedRoute,
     private router: Router
   ) { }
 
   ngOnInit() {
-    //let text = "www.sgx.com";
-    this.getDomains("text");
+    let text = this.route.snapshot.params['text'];
+    this.getDomains(text);
+  }
+
+  ngOnDestroy() {
+    clearInterval(this.timer);
   }
 
   getDomains(text: string) {
@@ -39,6 +44,7 @@ export class DomainComponent implements OnInit {
   }
 
   onSearch(text) {
+    clearInterval(this.timer);
     this.getDomains(text);
   }
 

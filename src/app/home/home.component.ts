@@ -17,6 +17,8 @@ import { AppState } from '../app.service';
   templateUrl: './home.component.html'
 })
 export class HomeComponent implements OnInit {
+  private text: string;
+
   // Set our default values
   public localState = { value: '' };
   // TypeScript public modifiers
@@ -31,12 +33,11 @@ export class HomeComponent implements OnInit {
   }
 
   public submitState(value: string) {
-    console.log('submitState', value);
     this.appState.set('value', value);
     this.localState.value = '';
   }
 
-  public doSearch() {
-    this.router.navigate(['./domain']);
+  public onSubmit() {
+    this.router.navigate(['./domain', this.text]);
   }
 }
