@@ -28,4 +28,10 @@ export class HeaderComponent implements OnInit {
     Cookie.set('language', lang);
     this.translate.use(lang);
   }
+
+  onSubmit(input: any) {
+    let text = input.value;
+    this.search.emit(text);
+    input.value = null;
+  }
 }
