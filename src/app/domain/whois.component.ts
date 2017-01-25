@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 import { DomainService } from './domain.service';
 
 @Component({
@@ -8,6 +8,8 @@ import { DomainService } from './domain.service';
 export class WhoisComponent implements OnInit {
   private entity: any;
 
+  @Input() domainId: number;
+
   constructor(private domainService: DomainService) { }
 
   ngOnInit() {
@@ -15,7 +17,7 @@ export class WhoisComponent implements OnInit {
   }
 
   getWhois() {
-    this.domainService.getWhoisByDomainId(2)
+    this.domainService.getWhoisByDomainId(this.domainId)
       .then((entity) => this.entity = entity);
   }
 }

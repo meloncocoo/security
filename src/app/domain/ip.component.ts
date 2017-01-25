@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 import { DomainService } from './domain.service';
 
 @Component({
@@ -8,6 +8,8 @@ import { DomainService } from './domain.service';
 export class IPComponent implements OnInit {
   private entity: any;
 
+  @Input() domainId: number;
+
   constructor(private domainService: DomainService) { }
 
   ngOnInit() {
@@ -15,6 +17,6 @@ export class IPComponent implements OnInit {
   }
 
   getIPs() {
-    this.domainService.getIPsByDomainId(2).then((entity) => this.entity = entity);
+    this.domainService.getIPsByDomainId(this.domainId).then((entity) => this.entity = entity);
   }
 }

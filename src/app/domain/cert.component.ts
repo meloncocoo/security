@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 import { DomainService } from './domain.service';
 
 @Component({
@@ -8,6 +8,8 @@ import { DomainService } from './domain.service';
 export class CertificateComponent implements OnInit {
   private entity: any;
 
+  @Input() domainId: number;
+
   constructor(private domainService: DomainService) { }
 
   ngOnInit() {
@@ -15,7 +17,7 @@ export class CertificateComponent implements OnInit {
   }
 
   getCerts() {
-    this.domainService.getCertsByDomainId(2)
+    this.domainService.getCertsByDomainId(this.domainId)
       .then((entity) => this.entity = entity);
   }
 }

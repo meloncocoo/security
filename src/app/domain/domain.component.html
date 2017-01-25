@@ -89,19 +89,19 @@
     </tab>
     <tab>
       <template tabHeading>{{'domain.IP.title' | translate}}</template>
-      <ip></ip>
+      <ip [domainId]="entity.id"></ip>
     </tab>
     <tab>
       <template tabHeading>{{'domain.sub-domains.title' | translate}}</template>
-      <sub-domains></sub-domains>
+      <sub-domains [domainId]="entity.id"></sub-domains>
     </tab>
     <tab>
       <template tabHeading>{{'domain.whois.title' | translate}}</template>
-      <whois></whois>
+      <whois [domainId]="entity.id"></whois>
     </tab>
     <tab>
       <template tabHeading>{{'domain.cert.title' | translate}}</template>
-      <cert></cert>
+      <cert [domainId]="entity.id"></cert>
     </tab>
     <tab>
       <template tabHeading>{{'domain.visualization' | translate}}</template>
